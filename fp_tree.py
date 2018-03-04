@@ -38,25 +38,27 @@ gejala2 = [[1, 2, 3, 4 ],
            [24, 31, 52, 23, 41, 27, 28, 34, 45, 43, 44, 35, 11, 38, 47, 46 ]
            ]
 
-lines = [line.rstrip('\n') for line in open('gejala.txt')]
+
+lines = [line.rstrip('\n') for line in open('C:\\Users\\Kevin\\PycharmProjects\\AqeelaTugasAkhir\\testing.csv')]
 
 
 gejala = []
 for val in lines:
     detail_gejala = val.split(',')
+    print detail_gejala
     for val2 in detail_gejala:
-        val2 = int(val2)
+        val2 = val2
     gejala.append(detail_gejala)
 
 
-#print(gejala)
-#print(transactions)
 
-patterns = pyfpgrowth.find_frequent_patterns(gejala, 3)
-rules = pyfpgrowth.generate_association_rules(patterns, 0.7)
+patterns = pyfpgrowth.find_frequent_patterns(gejala, 2)
+rules = pyfpgrowth.generate_association_rules(patterns, 0)
 #print(patterns)
 
-patterns = pyfpgrowth.find_frequent_patterns(transactions3, 3)
-rules = pyfpgrowth.generate_association_rules(patterns, 0)
-print(patterns)
-print(rules)
+new_rules = rules.split(', (');
+
+for rule in new_rules:
+  print rule
+
+

@@ -42,19 +42,31 @@ def generate_rules(filteredList, dataList,threshold):
 
     for i in range(len(filteredList)):
         subset = filteredList[i].item.split(',');
-        #print subset
+        print ''
+        print ''
+        print filteredList[i].item
+        print subset
         for L in range(1, len(subset)):
             for resultsubset in combinations(subset, L):
                 #convert tuple into list array
                 left = list(resultsubset)
                 right = list(subset)
 
+
+                #print '-----------BEGIN------------------'
+                #print left
+                #print right
+
                 #menghilangkan item yang ada di kanan berdasarkan yang dikir
                 #subset = A,B,C left = A,C right = A,B,C
-                #subset = A,B,C left = A,C right = B
+                #right = B
                 for item in left:
                     right.remove(item)
 
+                #print ''    
+                #print left
+                #print right
+                #print '-----------------------------'
                 #array jadi string
                 left_string = ','.join(left)
                 right_string = ','.join(right)
@@ -66,13 +78,16 @@ def generate_rules(filteredList, dataList,threshold):
                 support_left = find_by_item(dataList, left_string)
                 support = float(float(support_subset)/float(support_left))
 
+
+
+
                 #disort, biar kalo ke query tidak terjadi 5,10 dan 10,5. Nah diurutin jadi pasti yang kecil di depan
                 left = sorted(left);
                 right = sorted(right);
                 left_string = ','.join(left)
                 right_string = ','.join(right)
 
-                print 'RULES :'+ str(subset_string) + " || " + str(left_string) + " >> " + str(right_string) + " || " + str(support_subset) + " / " + str(support_left) + " = " + str(support)
+                print 'RULES '+ left_string + " >> " + right_string + " || " + support_subset + " / " + support_left + " = " + str(support)
                 #print 'INSERT INTO rules(items,result,probability) VALUES("'+left_string+'","'+right_string+'","'+str(support)+'");'
 
         #print ""
@@ -457,7 +472,16 @@ class Rules(object):
         self.result = result
         self.probability = probability
 
+def insertDB(db,item,support):
 
+
+    if(db == "data_all"):
+        query = ("INSERT INTO data_all (item, support) VALUES (%s,%s)")
+    elif (db == "data_filtered"):
+        query = ("INSERT INTO data_filtered (item, support) VALUES (%s,%s)")
+
+    cursor.execute(query,(item,support))
+    cnx.commit()
 
 if __name__ == '__main__':
     from optparse import OptionParser
@@ -482,28 +506,23 @@ if __name__ == '__main__':
 
     dataList = []
     filteredData = []
+    count = 0;
     try:
-        for itemset, support in find_frequent_itemsets(csv.reader(f), options.minsup, True):
-            print 'DATA {' + ', '.join(itemset) + '} ' + str(support)
+        for itemset, support in find_frequent_itemsets(csv.reader(f), 3, True):
+            count+=1
+            print '{' + ', '.join(itemset) + '} ' + str(support) + ' --- '+ str(count)
+            #print count
             dataList.append(Dataset(','.join(itemset),str(support)))
-            if support >= options.minsup :
+            #insertDB("data_all",','.join(itemset),str(support))
+            if support >= 3 :
                 filteredData.append(Dataset(','.join(itemset),str(support)))
 
-        """
-        print "------ALL DATA------"
-        for data in dataList:
-            print data.item + ' >> ' + data.support
-        """
 
-        print "------FILTERED DATA------"
-
-        #for data in filteredData:
-        #    print data.item + ' >> ' + data.support
-
-
-        generate_rules(filteredData,dataList,0.5)
+        #generate_rules(filteredData,dataList,0.5)
 
 
 
     finally:
+        cursor.close()
+        cnx.close()
         f.close()
