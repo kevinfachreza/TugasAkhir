@@ -1,9 +1,32 @@
+"""
+CREATED BY KEVIN
+FOR TUGAS AKHIR
+
+HOW TO RUN :
+
+python.exe "C:\Users\Kevin\PycharmProjects\AqeelaTugasAkhir\index.py"
+
+DESKRIPSI :
+JADI INI JALANNYA ADALAH
+DIA BUAT TREE
+NANTI HASIL TREE NYA LANGSUNG DI INSERT KE DB
+JADI NYALAIN DULU XAMPP NYA
+
+TRUS UNTUK DATA CSV NYA
+DI DECLARE DEFAULT SIH DI GEJALA.CSV
+
+"""
+
+
 from anytree import Node, RenderTree, AsciiStyle, findall, find, findall_by_attr
 from collections import Counter
 import sys
 from collections import defaultdict, namedtuple
 from itertools import combinations
+import mysql.connector
 
+cnx = mysql.connector.connect(user='root', database='aqeela_tugas_akhir')
+cursor = cnx.cursor()
 
 class FrequentPattern(object):
     def __init__(self, suffix=None, pattern=None, support=None):
@@ -272,16 +295,28 @@ def generate_rules(filteredList,threshold):
                 support = float(float(support_subset)/float(support_left))
 
                 #disort, biar kalo ke query tidak terjadi 5,10 dan 10,5. Nah diurutin jadi pasti yang kecil di depan
-                left = sorted(left);
-                right = sorted(right);
+                
+
+
+                right = sorted(right, key=lambda x: int(x))
+                left = sorted(left, key=lambda x: int(x))
+
                 left_string = ','.join(left)
                 right_string = ','.join(right)
 
                 if(support < 0):
                 	print 'BUGMIN'
 
-                print 'RULES :'+ str(subset_string) + " || " + str(left_string) + " >> " + str(right_string) + " || " + str(support_subset) + " / " + str(support_left) + " = " + str(support)
-                #print 'INSERT INTO rules(items,result,probability) VALUES("'+left_string+'","'+right_string+'","'+str(support)+'");'
+                #menghilangkan spasi
+                left_string = left_string.replace(" ","")
+                right_string = right_string.replace(" ","")
+
+                #print 'RULES :'+ str(subset_string) + " || " + str(left_string) + " >> " + str(right_string) + " || " + str(support_subset) + " / " + str(support_left) + " = " + str(support)
+                query = 'INSERT INTO rules(items,result,probability) VALUES("'+left_string+'","'+right_string+'","'+str(support)+'");'
+                print query
+                cursor.execute(query)
+                cnx.commit()
+
 
         #print ""
 
@@ -290,7 +325,7 @@ if __name__ == '__main__':
 
 
 	database =[]
-	min_support = 3;
+	min_support = 5;
 	min_probability = 0.5;
 
 
@@ -306,11 +341,12 @@ if __name__ == '__main__':
 	fp = mineFrequentPattern(itemOrdered, tree, min_support, itemCounter)
 	rules = generate_rules(fp, min_support)
 	#TREE
-	print ''
-	print '------------------------TREE------------------------'
-	print ''
-	for pre, fill, node in RenderTree(tree):
-		print("%s%s, support %d" % (pre, node.name,node.support))
+	#print ''
+	#print '------------------------TREE------------------------'
+	#print ''
+	#for pre, fill, node in RenderTree(tree):
+	#	print("%s%s, support %d" % (pre, node.name,node.support))
 
 
-	
+	cursor.close()
+	cnx.close()
