@@ -14,13 +14,15 @@ seed = 7
 numpy.random.seed(seed)
 
 # load dataset
-
-dataframe = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/NN/dataset-23Apr.csv", skipinitialspace=True,
-                             skiprows=1 )
+dataframe = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/NN/datatest-23Apr.csv")
 dataset = dataframe.values
 X = dataset[:,0:376]
+print(X)
 Y = dataset[:,376]
 
+
+label = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/NN/label-23Apr.csv")
+label = label.values
 #X = preprocessing.scale(X)
 
 # encode class values as integers
@@ -39,24 +41,23 @@ def load_model():
     return model
 
 
-X_train, X_test, Y_train, Y_test = train_test_split(X, y, test_size=0.1, random_state=seed)
 
 model = load_model()
 
 # predictions
 
-predictions = model.predict_classes(X_test, verbose=0)
-print(predictions)
+#predictions = model.predict_classes(X, verbose=0)
+#print(predictions)
 
-predictions = model.predict(X_test, verbose=0)
-print(predictions)
+predictions = model.predict(X, verbose=0)
+#print(predictions)
 
 #reverse encoding kalo mau diprint 1 1 tiap baris
 for pred in predictions:
     	top5 = pred.argsort()[-5:][::-1]
     	for item in top5:
-    		print (item, pred[item])
+    		print (label[item], pred[item])
     	print ("")
     	print ("")
 
-print(X_test[0])
+print(X[0])
