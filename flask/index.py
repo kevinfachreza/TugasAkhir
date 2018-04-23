@@ -1,7 +1,16 @@
+"""
+KALO NGIRIM GEJALA
+MISAL ID GEJALA NYA 3 DIKIRIM 2
+GEJALA_ID 50 DIKIRIM 49
+INTINYA DI KURANGI 1
+"""
+
 from flask import Flask
 from flask import request
 from flask import jsonify
 import json
+import jsonpickle
+from json import JSONEncoder
 # Train model and make predictions
 import numpy
 import pandas
@@ -15,6 +24,11 @@ from sklearn.preprocessing import LabelEncoder
 
 app = Flask(__name__)
 
+class HasilDiagnosis(object):
+    def __init__(self, diagnosis, probability):
+        self.diagnosis = diagnosis
+        self.probability = probability
+
 @app.route("/")
 def hello():
     return "Hello World!"
@@ -23,6 +37,10 @@ def hello():
 def predict():
 	#INIT
 	total_attributes=376
+
+	#init labels
+	label = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/NN/label-23Apr.csv")
+	label = label.values
 	
 	#RECEIVE DATA FROM REQUEST
 	data = request.json
@@ -57,20 +75,42 @@ def predict():
 	model.compile(loss='categorical_crossentropy', optimizer='adam')
 
 	predictions = model.predict(gejala_array_np, verbose=0)
-	#print(predictions)
 
 	#reverse encoding kalo mau diprint 1 1 tiap baris
+	#karena bingung gimana format list ke json, jadi list dibiarin aja buat debugging, yang json di cetak secara string
 	print ("")
 	print ("")
+
+	result = []
+	jsondata = '{ "result":['
+
+	index = 0
 	for pred in predictions:
 		top5 = pred.argsort()[-5:][::-1]
 		for item in top5:
-			print (item, pred[item])
+    			labels = label[item][0]
+    			result.append(HasilDiagnosis(labels,pred[item]))
 
+    			json_item_string = '{"diagnosis":"' + str(labels) +'","probability":"'+ str(pred[item]) +'"}'
+    			if index < 4:
+    				json_item_string = json_item_string + ','
+
+    			print (json_item_string)
+    			index = index+1
+    			jsondata = jsondata + json_item_string
+
+
+	jsondata = jsondata + "]}" 
 	print ("")
 	print ("")
+	for i in range(5):
+		print (result[i].diagnosis, result[i].probability)
 
-	return jsonify(gejala_array)
+	print (jsondata)
 
+	format_jsondata = json.dumps(jsondata)
+
+	return jsondata
+	
 if __name__ == "__main__":
     app.run()
