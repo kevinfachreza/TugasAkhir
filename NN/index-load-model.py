@@ -15,13 +15,13 @@ numpy.random.seed(seed)
 
 # load dataset
 
-dataframe = pandas.read_csv("../Users/Kevin/PycharmProjects/AqeelaTugasAkhir/NN/dataset-22Apr.csv", skipinitialspace=True,
+dataframe = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/NN/dataset-23Apr.csv", skipinitialspace=True,
                              skiprows=1 )
 dataset = dataframe.values
-X = dataset[:,0:365].astype(int)
-Y = dataset[:,365]
+X = dataset[:,0:376]
+Y = dataset[:,376]
 
-X = preprocessing.scale(X)
+#X = preprocessing.scale(X)
 
 # encode class values as integers
 encoder = LabelEncoder()
@@ -58,3 +58,5 @@ for pred in predictions:
     		print (item, pred[item])
     	print ("")
     	print ("")
+
+print(X_test[0])

@@ -15,13 +15,13 @@ numpy.random.seed(seed)
 
 # load dataset
 
-dataframe = pandas.read_csv("../Users/Kevin/PycharmProjects/AqeelaTugasAkhir/NN/dataset-22Apr.csv", skipinitialspace=True,
+dataframe = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/NN/dataset-23Apr.csv", skipinitialspace=True,
                              skiprows=1 )
 dataset = dataframe.values
-X = dataset[:,0:365].astype(int)
-Y = dataset[:,365]
+X = dataset[:,0:376]
+Y = dataset[:,376]
 
-X = preprocessing.scale(X)
+#X = preprocessing.scale(X)
 
 # encode class values as integers
 encoder = LabelEncoder()
@@ -35,8 +35,8 @@ def build_model():
     # create model
     model = Sequential()
 
-    total_input = 365
-    hidden_layer = 8
+    total_input = 376
+    hidden_layer = 8    
     class_output = 72
 
     model.add(Dense(hidden_layer, input_dim=total_input, activation='relu'))
@@ -64,7 +64,7 @@ X_train, X_test, Y_train, Y_test = train_test_split(X, y, test_size=0.1, random_
 
 # build
 model = build_model()
-model.fit(X_train, Y_train, nb_epoch=200, batch_size=5, verbose=1)
+model.fit(X, y, nb_epoch=200, batch_size=5, verbose=1)
 
 #evaluate
 score, acc = model.evaluate(X_test, Y_test, batch_size=5)
