@@ -4,7 +4,7 @@ FOR TUGAS AKHIR
 
 HOW TO RUN :
 
-python.exe "C:\Users\Kevin\PycharmProjects\AqeelaTugasAkhir\index.py"
+python.exe "C:\Users\Kevin\PycharmProjects\TugasAkhir\index.py"
 
 DESKRIPSI :
 JADI INI JALANNYA ADALAH

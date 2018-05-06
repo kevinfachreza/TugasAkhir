@@ -3,10 +3,7 @@ KALO NGIRIM GEJALA
 MISAL ID GEJALA NYA 3 DIKIRIM 2
 GEJALA_ID 50 DIKIRIM 49
 INTINYA DI KURANGI 1
-
 """
-
-#python.exe "C:\Users\Kevin\PycharmProjects\TugasAkhir\flask\index.py"
 
 from flask import Flask
 from flask import request
@@ -17,11 +14,13 @@ from json import JSONEncoder
 # Train model and make predictions
 import numpy
 import pandas
+from keras.models import Sequential, model_from_json
+from keras.layers import Dense
+from keras.utils import np_utils
 from sklearn import datasets
 from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
-import pickle
 
 app = Flask(__name__)
 
@@ -71,11 +70,11 @@ def predict():
 	print (gejala_array_np)
 
 	#LOAD MODEL
-	filename = '../Users/Kevin/PycharmProjects/TugasAkhir/NaiveBayes/model_architecture.sav'
-	
-	loaded_model = pickle.load(open(filename, 'rb'))
+	model = model_from_json(open('model_architecture.json').read())
+	model.load_weights('model_weights.h5')
+	model.compile(loss='categorical_crossentropy', optimizer='adam')
 
-	predictions = loaded_model.predict_proba(gejala_array_np)
+	predictions = model.predict(gejala_array_np, verbose=0)
 
 	#reverse encoding kalo mau diprint 1 1 tiap baris
 	#karena bingung gimana format list ke json, jadi list dibiarin aja buat debugging, yang json di cetak secara string
