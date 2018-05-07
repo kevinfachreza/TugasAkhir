@@ -23,7 +23,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 import pickle
 
+from flask_cors import CORS
+
 app = Flask(__name__)
+CORS(app)
 
 class HasilDiagnosis(object):
     def __init__(self, diagnosis, probability):
@@ -68,7 +71,7 @@ def predict():
 	#PREPROCESS DATA
 	#gejala_array_np = preprocessing.scale(gejala_array_np)
 
-	print (gejala_array_np)
+	#print (gejala_array_np)
 
 	#LOAD MODEL
 	filename = '../Users/Kevin/PycharmProjects/TugasAkhir/NaiveBayes/model_architecture.sav'
@@ -79,8 +82,8 @@ def predict():
 
 	#reverse encoding kalo mau diprint 1 1 tiap baris
 	#karena bingung gimana format list ke json, jadi list dibiarin aja buat debugging, yang json di cetak secara string
-	print ("")
-	print ("")
+	#print ("")
+	#print ("")
 
 	result = []
 	jsondata = '{ "result":['
@@ -96,18 +99,18 @@ def predict():
     			if index < 4:
     				json_item_string = json_item_string + ','
 
-    			print (json_item_string)
+    			#print (json_item_string)
     			index = index+1
     			jsondata = jsondata + json_item_string
 
 
 	jsondata = jsondata + "]}" 
-	print ("")
-	print ("")
-	for i in range(5):
-		print (result[i].diagnosis, result[i].probability)
+	#print ("")
+	#print ("")
+	#for i in range(5):
+		#print (result[i].diagnosis, result[i].probability)
 
-	print (jsondata)
+	#print (jsondata)
 
 	format_jsondata = json.dumps(jsondata)
 
