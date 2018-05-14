@@ -1,0 +1,1397 @@
+jumlah gejala 250
+jumlah diagnosis 66
+akurasi 0.7587939698492462
+
+rhinitis --- rhinitis
+rhinitis 0.9270020292668852
+ankilostomiasis 0.048160088596070384
+influenza 0.00898864884203953
+perdarahan-subkonjungtiva 0.003066529593802129
+faringitis 0.0026404194344541794
+
+rhinitis --- rhinitis
+rhinitis 0.9999510175949208
+sinusitis 4.0075692797845e-05
+influenza 5.057178889539216e-06
+faringitis 2.8013199486697495e-06
+morbili 2.042942500870366e-07
+
+rhinitis --- rhinitis
+rhinitis 0.9751578121775276
+perdarahan-subkonjungtiva 0.011520818861154261
+episkleritis 0.002120176900921543
+buta-senja 0.0018023681062783528
+epistaksis 0.0008490303707698068
+
+influenza --- influenza
+influenza 0.9257627288293309
+faringitis 0.06783163638662128
+tonsilitis 0.003367523153810383
+morbili 0.0013851083745079892
+sinusitis 0.0005728451138712238
+
+influenza --- influenza
+influenza 0.928694406037186
+faringitis 0.06804644354635417
+tonsilitis 0.0013512749294191744
+bronkopneumonia 0.0007813239861932548
+leptospirosis 0.0006737450561975333
+
+influenza --- influenza
+influenza 0.9119144807463205
+morbili 0.047753611230377455
+faringitis 0.021259941904793044
+sinusitis 0.005386271579207587
+bronkopneumonia 0.004784580546989177
+
+influenza --- faringitis
+influenza 0.9028449986155102
+faringitis 0.0902078584193386
+rhinitis 0.0033047726275398275
+bronkopneumonia 0.0010985610641929865
+morbili 0.0008372846948642777
+
+influenza --- faringitis
+influenza 0.835827734874356
+faringitis 0.13473240464562622
+tonsilitis 0.011148055105797701
+sinusitis 0.007964802657718706
+morbili 0.0027512086090416407
+
+leptospirosis --- faringitis
+leptospirosis 0.4472251413340974
+influenza 0.34038891266317295
+filariasis 0.1004231294825138
+faringitis 0.0952279889535105
+lupus-eritematosus-sistemik 0.00641909208339927
+
+tonsilitis --- tonsilitis
+tonsilitis 0.7161995588914644
+faringitis 0.22354844574057792
+laringitis 0.025571413483871153
+peritonitis 0.012713060680901713
+influenza 0.008404897618176005
+
+tonsilitis --- tonsilitis
+tonsilitis 0.7989442857518728
+faringitis 0.1463003999973032
+laringitis 0.024749369499472026
+influenza 0.014118083847395994
+filariasis 0.005312733605124407
+
+tonsilitis --- tonsilitis
+tonsilitis 0.936781910517602
+faringitis 0.04678386351831549
+laringitis 0.007914340116971674
+influenza 0.004514673287761919
+filariasis 0.0016989031054999858
+
+laringitis --- laringitis
+laringitis 0.9999865750772129
+asam-lambung 6.018984016937467e-06
+faringitis 5.30747340301348e-06
+influenza 5.986456816875571e-07
+morbili 2.660175971771477e-07
+
+laringitis --- laringitis
+laringitis 0.9998523456718392
+asam-lambung 6.619993689590006e-05
+faringitis 5.8374370718952966e-05
+influenza 6.584218572303792e-06
+morbili 2.9258007824527337e-06
+
+laringitis --- laringitis
+laringitis 0.9104039721878066
+faringitis 0.061390683718015364
+influenza 0.02590775924204758
+morbili 0.0014652297073043804
+rhinitis 0.000525752640373103
+
+tuberkulosis --- pneumonia
+tuberkulosis 0.42491576146277676
+pneumonia 0.3268906004469393
+bronkopneumonia 0.2131924881869699
+influenza 0.024931529040415
+pneumotoraks 0.003385163200397389
+
+pneumonia --- pneumonia
+pneumonia 0.6277187582690272
+bronkopneumonia 0.2947589961819223
+tuberkulosis 0.05828240697339232
+pneumotoraks 0.010214966114765503
+ppok-penyakit-paru-obstruktif-kronis 0.007212077380227308
+
+pneumonia --- pneumonia
+pneumonia 0.48886256937557887
+bronkopneumonia 0.38259342081108627
+tuberkulosis 0.07564982153518968
+pneumotoraks 0.029169570855750306
+ppok-penyakit-paru-obstruktif-kronis 0.020594605972858417
+
+bronkopneumonia --- bronkopneumonia
+bronkopneumonia 0.585868886986552
+pneumonia 0.34027264956179337
+tuberkulosis 0.05265603632844165
+ppok-penyakit-paru-obstruktif-kronis 0.014334869511520621
+pneumotoraks 0.0025169592557951126
+
+pneumotoraks --- bronkopneumonia
+pneumotoraks 0.4203066972867167
+ppok-penyakit-paru-obstruktif-kronis 0.1978328914785751
+pneumonia 0.18296260156918015
+tuberkulosis 0.07927595456368157
+bronkopneumonia 0.030373660795223325
+
+pneumonia --- bronkopneumonia
+pneumonia 0.3288718592427351
+tuberkulosis 0.2544590138230149
+bronkopneumonia 0.21448463146621996
+pneumotoraks 0.09811603098286369
+angina-pektoris-stabil 0.029147123401545197
+
+pneumotoraks --- pneumotoraks
+pneumotoraks 0.733026432595136
+angina-pektoris-stabil 0.24442294517198807
+infark-miokard 0.016650198598858863
+gagal-jantung 0.0014830422711268605
+takikardia 0.0011339002629205935
+
+pneumotoraks --- pneumotoraks
+pneumotoraks 0.9855829310861098
+gagal-jantung 0.006092804630295216
+infark-miokard 0.003420212933019779
+takikardia 0.0019057169956547683
+ppok-penyakit-paru-obstruktif-kronis 0.0015340643412483453
+
+pneumotoraks --- pneumotoraks
+pneumotoraks 0.9910356057335743
+angina-pektoris-stabil 0.0061684829369219275
+infark-miokard 0.0025678874985704367
+takikardia 0.00014308076557778467
+perdarahan-subkonjungtiva 1.6799248266271202e-05
+
+ppok-penyakit-paru-obstruktif-kronis --- ppok-penyakit-paru-obstruktif-kronis
+ppok-penyakit-paru-obstruktif-kronis 0.8616037804700422
+gagal-jantung 0.057033499855856776
+angina-pektoris-stabil 0.030266599149919197
+pneumotoraks 0.02475539481485203
+lupus-eritematosus-sistemik 0.006807733574084312
+
+ppok-penyakit-paru-obstruktif-kronis --- ppok-penyakit-paru-obstruktif-kronis
+ppok-penyakit-paru-obstruktif-kronis 0.996781430339371
+tuberkulosis 0.0016175347884801467
+bronkopneumonia 0.000885342368947148
+gagal-jantung 0.0005397937806352317
+pneumonia 8.22730956615208e-05
+
+pneumotoraks --- ppok-penyakit-paru-obstruktif-kronis
+pneumotoraks 0.6454513654782856
+angina-pektoris-stabil 0.2812228943210425
+infark-miokard 0.01368359095073758
+perdarahan-subkonjungtiva 0.013238826315005357
+takikardia 0.01025057449800201
+
+epistaksis --- epistaksis
+epistaksis 0.8143445165102255
+perdarahan-subkonjungtiva 0.09132358013442615
+episkleritis 0.016806283255031494
+buta-senja 0.014287066758807983
+hifema 0.006403857359789461
+
+epistaksis --- epistaksis
+epistaksis 0.9989824243132933
+perdarahan-subkonjungtiva 0.00046293203367367707
+episkleritis 8.519340650350514e-05
+alergi-makanan 7.704467566687751e-05
+buta-senja 7.242314482361516e-05
+
+epistaksis --- epistaksis
+epistaksis 0.9649140253621936
+perdarahan-subkonjungtiva 0.009837181542549254
+alergi-makanan 0.0036017931226240015
+takikardia 0.0035544809334336655
+serumen-prop 0.0027583273557510025
+
+sinusitis --- sinusitis
+sinusitis 0.881572542341611
+rhinitis 0.10708000426846809
+influenza 0.0033036761526547705
+filariasis 0.0023733749863833592
+perdarahan-subkonjungtiva 0.0012650766034206279
+
+sinusitis --- sinusitis
+sinusitis 0.9914720179645007
+influenza 0.005307889035060495
+rhinitis 0.0018619189636760384
+faringitis 0.0006682262870994788
+morbili 0.00042884431563451874
+
+sinusitis --- sinusitis
+sinusitis 0.9999584956893636
+rhinitis 2.327920671467585e-05
+faringitis 8.169041839974708e-06
+hipertensi 1.551709057587274e-06
+influenza 1.5356841349561943e-06
+
+tuberkulosis --- tuberkulosis
+tuberkulosis 0.9961504204329755
+ppok-penyakit-paru-obstruktif-kronis 0.0028123202187898527
+askariasis 0.00017635556927547664
+filariasis 0.0001221510436540102
+disentri 9.217517754131527e-05
+
+tuberkulosis --- tuberkulosis
+tuberkulosis 0.9139057869516988
+ppok-penyakit-paru-obstruktif-kronis 0.08514422833117369
+askariasis 0.00040448804722675836
+bronkopneumonia 0.00012861428193886392
+gagal-jantung 0.00011762430884341242
+
+tuberkulosis --- tuberkulosis
+tuberkulosis 0.9926736042388209
+ppok-penyakit-paru-obstruktif-kronis 0.007149246203993882
+gagal-jantung 3.55553227261774e-05
+taeniasis 2.1653149864852706e-05
+strongiloidiasis 1.7726314361407263e-05
+
+morbili --- morbili
+morbili 0.9994174099367898
+laringitis 0.00022033011682909872
+lupus-eritematosus-sistemik 0.0001327882400532513
+faringitis 7.959309977272759e-05
+influenza 7.241883892407297e-05
+
+morbili --- morbili
+morbili 0.9981416606196993
+lupus-eritematosus-sistemik 0.0015317464099911722
+leptospirosis 8.16639438066567e-05
+malaria 6.947218102909021e-05
+filariasis 4.000888490539126e-05
+
+morbili --- morbili
+morbili 0.9665279792271705
+ankilostomiasis 0.016415445427310892
+lupus-eritematosus-sistemik 0.009888214073194682
+strongiloidiasis 0.0024327482064596803
+alergi-makanan 0.0013861769444508576
+
+varisela --- varisela
+varisela 0.9984468867098979
+filariasis 0.00040416133042735155
+morbili 0.0003787759906649725
+lupus-eritematosus-sistemik 0.00012787917095552972
+perdarahan-subkonjungtiva 9.792251082116979e-05
+
+varisela --- varisela
+varisela 0.9983068925022943
+filariasis 0.0007937770149766543
+lupus-eritematosus-sistemik 0.00031965310191176314
+influenza 9.339079955549513e-05
+perdarahan-subkonjungtiva 8.741855438639071e-05
+
+varisela --- varisela
+varisela 0.9970834811827192
+filariasis 0.001982010630498406
+malaria 0.00013273390650088158
+leptospirosis 0.00013026418930433753
+astigmatisme 0.00011873966720906452
+
+malaria --- malaria
+malaria 0.9913637786657491
+leptospirosis 0.00501400711397748
+disentri 0.0013404497162200393
+keracunan-makanan 0.0008989665100874865
+peritonitis 0.0006450914259308931
+
+malaria --- malaria
+malaria 0.9874685358576452
+leptospirosis 0.010702084708608272
+keracunan-makanan 0.0010659932290636165
+disentri 0.0003406078707422131
+gastroenteritis 0.00016854516018400132
+
+malaria --- malaria
+malaria 0.9852560933563028
+leptospirosis 0.007474674535456961
+disentri 0.005233608875403002
+keracunan-makanan 0.0006381629102739693
+gastroenteritis 0.0004204188286687371
+
+leptospirosis --- leptospirosis
+leptospirosis 0.9899028985144377
+malaria 0.009803279448829805
+skistosomiasis 5.5361499843979176e-05
+morbili 5.453600369430958e-05
+hepatitis-b 4.7340280984643665e-05
+
+leptospirosis --- leptospirosis
+leptospirosis 0.9269742770277646
+malaria 0.03832129903437965
+peritonitis 0.02323295978033585
+kolesistitis 0.005476340519650662
+apendisitis 0.001912372879877994
+
+leptospirosis --- leptospirosis
+leptospirosis 0.7249701270700729
+malaria 0.23692606317930648
+morbili 0.008698987392960982
+disentri 0.008222422497204668
+influenza 0.004894047699392169
+
+filariasis --- filariasis
+filariasis 0.9875687275850047
+lupus-eritematosus-sistemik 0.009468876294316426
+limfadenitis 0.0022635794706719124
+leptospirosis 0.0003028957443219462
+perdarahan-subkonjungtiva 8.988496633249446e-05
+
+filariasis --- filariasis
+filariasis 0.9941925442475716
+limfadenitis 0.005013275830255955
+perdarahan-subkonjungtiva 0.00019907325325066154
+lupus-eritematosus-sistemik 0.00017331610727456374
+leptospirosis 4.3561046476748914e-05
+
+filariasis --- filariasis
+filariasis 0.971460342135701
+limfadenitis 0.014695941992706135
+perdarahan-subkonjungtiva 0.0064192076982004485
+episkleritis 0.0011813271302990333
+buta-senja 0.0010042493821184688
+
+perdarahan-subkonjungtiva --- lepra
+perdarahan-subkonjungtiva 0.48535900447924757
+episkleritis 0.08932064312033434
+buta-senja 0.0759317198118644
+epistaksis 0.03576868454367778
+hifema 0.034034691022837286
+
+lepra --- lepra
+lepra 0.9988111401525752
+perdarahan-subkonjungtiva 0.0005677810903118108
+episkleritis 0.00010448878391084629
+buta-senja 8.882619723989206e-05
+epistaksis 4.184280609158231e-05
+
+lepra --- lepra
+lepra 0.8765398347023909
+perdarahan-subkonjungtiva 0.06029128980253193
+episkleritis 0.011095409233201656
+buta-senja 0.009432237337996092
+epistaksis 0.004443185571455548
+
+lepra --- lepra
+lepra 0.9662414005226242
+perdarahan-subkonjungtiva 0.016477997906871867
+episkleritis 0.003032446821413095
+buta-senja 0.002577891228097284
+epistaksis 0.0012143512402219858
+
+peritonitis --- keracunan-makanan
+peritonitis 0.41931502213629923
+keracunan-makanan 0.37185020018070963
+taeniasis 0.07638054037901952
+gastroenteritis 0.037117155159390916
+disentri 0.02828908902926642
+
+keracunan-makanan --- keracunan-makanan
+keracunan-makanan 0.4243826561959125
+peritonitis 0.31265461617744644
+kolesistitis 0.12739080432617916
+apendisitis 0.06355096814457885
+disentri 0.030133206387725875
+
+kolesistitis --- keracunan-makanan
+kolesistitis 0.7948083616709987
+peritonitis 0.05757657027584364
+keracunan-makanan 0.03744336017518121
+leptospirosis 0.026851015656726346
+apendisitis 0.02293819225601712
+
+alergi-makanan --- alergi-makanan
+alergi-makanan 0.9918412065205087
+ankilostomiasis 0.005648269267504411
+perdarahan-subkonjungtiva 0.0006216738588396224
+epistaksis 0.0005039589568698264
+taeniasis 0.00022771864435419632
+
+ankilostomiasis --- alergi-makanan
+ankilostomiasis 0.8261721292371077
+alergi-makanan 0.10254548610167269
+faringitis 0.027902100308734495
+strongiloidiasis 0.026722505685914485
+laringitis 0.003510853121207608
+
+perdarahan-subkonjungtiva --- alergi-makanan
+perdarahan-subkonjungtiva 0.7390733151469648
+episkleritis 0.1360117010558666
+alergi-makanan 0.041000737125974754
+trikiasis 0.020149881637906094
+leptospirosis 0.010228753905533338
+
+leptospirosis --- demam-berdarah-dengue
+leptospirosis 0.6363016391524922
+malaria 0.176826946269733
+lupus-eritematosus-sistemik 0.10396642651344615
+influenza 0.030375139928091703
+hepatitis-b 0.01841012138904995
+
+demam-berdarah-dengue --- demam-berdarah-dengue
+demam-berdarah-dengue 0.8844505799190479
+malaria 0.05123482762851938
+leptospirosis 0.01229103953119331
+kolesistitis 0.011275510727175385
+hepatitis-b 0.009504666234608054
+
+kolesistitis --- demam-berdarah-dengue
+kolesistitis 0.29184688671439285
+apendisitis 0.20382957167354304
+peritonitis 0.14617925705704393
+malaria 0.1205567236217512
+hepatitis-b 0.06709409244063527
+
+anemia --- anemia
+anemia 0.998216179542547
+takikardia 0.001566932986364825
+hipertensi 0.00015223836546544216
+angina-pektoris-stabil 1.9378764521428908e-05
+gagal-jantung 1.106569111968226e-05
+
+anemia --- anemia
+anemia 0.8308382010169327
+takikardia 0.15370860589740065
+angina-pektoris-stabil 0.00697020058712379
+hipertensi 0.006969131412082229
+infark-miokard 0.000664738384340161
+
+anemia --- anemia
+anemia 0.9902997186550987
+takikardia 0.006839827524677287
+hipertensi 0.0023733446426952858
+gagal-jantung 0.00017251038301892497
+angina-pektoris-stabil 0.00013292769007394392
+
+hiv-aids --- hiv-aids
+hiv-aids 0.880271243763936
+lupus-eritematosus-sistemik 0.06747025955593186
+skistosomiasis 0.0164667859711662
+strongiloidiasis 0.009623940700975697
+taeniasis 0.007241629232148954
+
+lupus-eritematosus-sistemik --- hiv-aids
+lupus-eritematosus-sistemik 0.40399673278258647
+filariasis 0.18654971787940514
+leptospirosis 0.14835392072376313
+influenza 0.05408052196137323
+morbili 0.04895311274468472
+
+askariasis --- hiv-aids
+askariasis 0.5107458710125554
+keracunan-makanan 0.22646571712347943
+ankilostomiasis 0.03329896520749207
+pneumonia 0.03320149505839524
+bronkopneumonia 0.03062416530622317
+
+lupus-eritematosus-sistemik --- lupus-eritematosus-sistemik
+lupus-eritematosus-sistemik 0.9988089847236425
+filariasis 0.00019965822424090386
+leptospirosis 0.00019683282459598863
+anemia 0.00016433167174062082
+perdarahan-subkonjungtiva 0.00013192999801089295
+
+lupus-eritematosus-sistemik --- lupus-eritematosus-sistemik
+lupus-eritematosus-sistemik 0.9985389104710419
+filariasis 0.00040985403411990696
+leptospirosis 0.0003142643120942106
+influenza 0.0002870288208667793
+morbili 9.258877247808131e-05
+
+lupus-eritematosus-sistemik --- lupus-eritematosus-sistemik
+lupus-eritematosus-sistemik 0.9951839001787427
+tuberkulosis 0.0025641165768973064
+filariasis 0.0004603421760912737
+angina-pektoris-stabil 0.00023692437170530793
+taeniasis 0.00016050153350289782
+
+limfadenitis --- limfadenitis
+limfadenitis 0.7409109227154196
+filariasis 0.15053428271043506
+influenza 0.05714721817902415
+faringitis 0.0263796024411662
+morbili 0.011286338948339357
+
+peritonitis --- limfadenitis
+peritonitis 0.7042003106150626
+keracunan-makanan 0.17031479652139514
+kolesistitis 0.03651781610760992
+taeniasis 0.023322538998275764
+apendisitis 0.018217504634181734
+
+limfadenitis --- limfadenitis
+limfadenitis 0.9993871346521079
+filariasis 0.00036625195617017906
+perdarahan-subkonjungtiva 0.00011713364724062814
+episkleritis 2.1556111261989834e-05
+buta-senja 1.8324908368311576e-05
+
+asam-lambung --- asam-lambung
+asam-lambung 0.9970681327489735
+perdarahan-subkonjungtiva 0.0007048277729342638
+gastritis 0.0005414036736013833
+taeniasis 0.00025817785752703463
+apendisitis 0.00023527665815763858
+
+asam-lambung --- asam-lambung
+asam-lambung 0.9990634594209719
+infark-miokard 0.00019111802502309836
+faringitis 0.00018953853721298918
+leptospirosis 0.00012872843039079355
+angina-pektoris-stabil 7.93500199720688e-05
+
+asam-lambung --- asam-lambung
+asam-lambung 0.9959034528930321
+laringitis 0.0015919913129277526
+infark-miokard 0.0005103040839570949
+faringitis 0.0005060866948334801
+angina-pektoris-stabil 0.0003178086361733539
+
+pneumotoraks --- hipertensi
+pneumotoraks 0.30340107917747894
+takikardia 0.17351934375927572
+anemia 0.11627117419926364
+lupus-eritematosus-sistemik 0.09734117956944145
+gagal-jantung 0.06739671146891525
+
+hipertensi --- hipertensi
+hipertensi 0.5480826560439784
+takikardia 0.20513495766603845
+anemia 0.15120164742703854
+astigmatisme 0.02751390988357195
+angina-pektoris-stabil 0.012684850195622467
+
+takikardia --- hipertensi
+takikardia 0.2985205238978218
+hifema 0.24980789839894993
+hipertensi 0.21752498516955077
+anemia 0.10001574200376027
+astigmatisme 0.04003933257583992
+
+cardiorespiratory-arrest --- cardiorespiratory-arrest
+cardiorespiratory-arrest 0.997289397637995
+takikardia 0.0018429908068350153
+angina-pektoris-stabil 0.00046903675373921155
+infark-miokard 0.00036903393558500986
+gagal-jantung 1.4229460577400124e-05
+
+cardiorespiratory-arrest --- cardiorespiratory-arrest
+cardiorespiratory-arrest 0.9847537511124843
+perdarahan-subkonjungtiva 0.007386786209408495
+episkleritis 0.0013593906546035743
+buta-senja 0.001155621664760794
+epistaksis 0.0005443715338080615
+
+cardiorespiratory-arrest --- cardiorespiratory-arrest
+cardiorespiratory-arrest 0.9989436834198078
+takikardia 0.0009025123198470116
+perdarahan-subkonjungtiva 4.423392579052321e-05
+hipertensi 1.782629641514437e-05
+serumen-prop 1.2403110284436336e-05
+
+gagal-jantung --- gagal-jantung
+gagal-jantung 0.9883937714943787
+ppok-penyakit-paru-obstruktif-kronis 0.006463914348394054
+anemia 0.0013048308804200321
+influenza 0.0006513401696909983
+ankilostomiasis 0.0004985430724866502
+
+gagal-jantung --- gagal-jantung
+gagal-jantung 0.9587998585735366
+pneumonia 0.01859915758411222
+bronkopneumonia 0.009530756829717654
+ppok-penyakit-paru-obstruktif-kronis 0.004275256073733406
+angina-pektoris-stabil 0.002266548195887352
+
+ppok-penyakit-paru-obstruktif-kronis --- gagal-jantung
+ppok-penyakit-paru-obstruktif-kronis 0.9207480709066528
+gagal-jantung 0.07555603051871308
+bronkopneumonia 0.0025034983316327866
+tuberkulosis 0.0004455128408641976
+askariasis 0.00014201708032270748
+
+takikardia --- takikardia
+takikardia 0.9443506018559749
+hipertensi 0.044683531864483796
+infark-miokard 0.0053480964891309615
+pneumotoraks 0.0029010138534873095
+cardiorespiratory-arrest 0.0013681906586509554
+
+kolesistitis --- gastritis
+kolesistitis 0.3423618781428879
+apendisitis 0.23910988314741322
+taeniasis 0.145768999091314
+gastritis 0.13100582071794076
+peritonitis 0.054562146187651074
+
+gastritis --- gastritis
+gastritis 0.7404672872094753
+apendisitis 0.12286272024809029
+taeniasis 0.07490102675998063
+kolesistitis 0.02513101095983675
+peritonitis 0.014304015527079533
+
+infark-miokard --- takikardia
+infark-miokard 0.7120908120103094
+angina-pektoris-stabil 0.09481549983529199
+cardiorespiratory-arrest 0.04241052428770965
+gastritis 0.02880020807496999
+takikardia 0.021553028443013912
+
+gastritis --- gastritis
+gastritis 0.6989436858224611
+kolesistitis 0.11860862547290289
+apendisitis 0.08283777017155074
+taeniasis 0.050500542620477165
+peritonitis 0.01890263366141455
+
+takikardia --- takikardia
+takikardia 0.6412296813435701
+hipertensi 0.3337494308438204
+infark-miokard 0.01089433797399048
+cardiorespiratory-arrest 0.004645120458120948
+angina-pektoris-stabil 0.0029671167403371246
+
+infark-miokard --- infark-miokard
+infark-miokard 0.92491101108481
+angina-pektoris-stabil 0.06557811407181369
+kolesistitis 0.0038644245792319116
+pneumonia 0.002911959106130873
+bronkopneumonia 0.0007353432086189031
+
+malaria --- gastroenteritis
+malaria 0.9017587659866102
+leptospirosis 0.058639025041563576
+keracunan-makanan 0.03212443458012031
+gastroenteritis 0.0023087380023992846
+disentri 0.0018662638173421592
+
+taeniasis --- gastroenteritis
+taeniasis 0.35407784561708117
+keracunan-makanan 0.3078194232619331
+disentri 0.11708923466173289
+gastroenteritis 0.07742892392585041
+apendisitis 0.06285779443835554
+
+peritonitis --- gastroenteritis
+peritonitis 0.2300301105457661
+keracunan-makanan 0.21856242955368135
+apendisitis 0.2016140371891497
+disentri 0.1593282150966351
+gastroenteritis 0.13089812412334337
+
+disentri --- disentri
+disentri 0.9062782995015517
+gastroenteritis 0.08272938646839817
+peritonitis 0.0056642393718846695
+skistosomiasis 0.0018281717099043488
+keracunan-makanan 0.0015069208827119943
+
+disentri --- disentri
+disentri 0.7323091967561879
+gastroenteritis 0.23584207498717594
+peritonitis 0.015070923269242182
+apendisitis 0.007658384964076636
+keracunan-makanan 0.004339270664791152
+
+disentri --- disentri
+disentri 0.5986919705095208
+gastroenteritis 0.1285402006225126
+taeniasis 0.11756133239096064
+apendisitis 0.04591425740120425
+ankilostomiasis 0.037112195970977965
+
+hemoroid --- hemoroid
+hemoroid 0.9997282964697651
+perdarahan-subkonjungtiva 0.00010120346376637578
+taeniasis 4.854502843536708e-05
+strongiloidiasis 2.384478304818568e-05
+episkleritis 1.8624478759422382e-05
+
+infark-miokard --- infark-miokard
+infark-miokard 0.5411240955181562
+angina-pektoris-stabil 0.4539221536943635
+kolesistitis 0.0022106598394206227
+takikardia 0.0006381170111025742
+keracunan-makanan 0.0005738547671869684
+
+hemoroid --- hemoroid
+hemoroid 0.9991853321055846
+perdarahan-subkonjungtiva 0.00030344549687365876
+taeniasis 0.0001455559891539015
+strongiloidiasis 7.149549798615964e-05
+episkleritis 5.584309074847603e-05
+
+hemoroid --- hemoroid
+hemoroid 0.9999354991191229
+perdarahan-subkonjungtiva 2.5766220859593892e-05
+disentri 8.564243943143326e-06
+episkleritis 4.741758979889089e-06
+buta-senja 4.030982107812017e-06
+
+angina-pektoris-stabil --- infark-miokard
+angina-pektoris-stabil 0.5566914441744533
+infark-miokard 0.4424241054842925
+takikardia 0.0007825885508601225
+hipertensi 5.818919737535425e-05
+cardiorespiratory-arrest 2.024691326712566e-05
+
+infark-miokard --- angina-pektoris-stabil
+infark-miokard 0.5391443621281815
+angina-pektoris-stabil 0.15418004099519425
+taeniasis 0.05849054020405693
+takikardia 0.05769725494122154
+anemia 0.036163018743327315
+
+hepatitis-b --- hepatitis-a
+hepatitis-b 0.5164739528238153
+hepatitis-a 0.482851100306449
+taeniasis 0.0002951279730421818
+kolesistitis 0.00023576713882151018
+apendisitis 4.000896901213491e-05
+
+hepatitis-a --- hepatitis-a
+hepatitis-a 0.6981180936402739
+hepatitis-b 0.298692339010005
+taeniasis 0.002560220048657192
+keracunan-makanan 0.00028154924896799257
+peritonitis 0.00014816088244543803
+
+hepatitis-b --- hepatitis-a
+hepatitis-b 0.5444079957797793
+hepatitis-a 0.4544344781513671
+kolesistitis 0.0007988106061254575
+peritonitis 0.0002066660576787909
+keracunan-makanan 5.131623490980566e-05
+
+angina-pektoris-stabil --- angina-pektoris-stabil
+angina-pektoris-stabil 0.8440776969957992
+infark-miokard 0.1341642031543708
+pneumotoraks 0.018679132151262837
+asam-lambung 0.0017774548245043976
+perdarahan-subkonjungtiva 0.0005473241550504686
+
+angina-pektoris-stabil --- angina-pektoris-stabil
+angina-pektoris-stabil 0.6919918724890075
+infark-miokard 0.3079734339364996
+takikardia 1.7687125095474207e-05
+pneumotoraks 9.204224325283098e-06
+cardiorespiratory-arrest 2.013424071155677e-06
+
+hepatitis-b --- hepatitis-b
+hepatitis-b 0.6618754849844054
+hepatitis-a 0.30939344031121335
+kolesistitis 0.0249267176031986
+peritonitis 0.0018057118885983164
+apendisitis 0.0014099961472516258
+
+hepatitis-a --- hepatitis-b
+hepatitis-a 0.7057850190454737
+hepatitis-b 0.2818411499299107
+kolesistitis 0.010338647739924038
+peritonitis 0.0016476682872178015
+keracunan-makanan 0.00011157938977846082
+
+hepatitis-b --- hepatitis-b
+hepatitis-b 0.9780742785344574
+hepatitis-a 0.017175073045285257
+leptospirosis 0.0035554197610101626
+taeniasis 0.0003556633740125307
+apendisitis 0.00024107719717210465
+
+kolesistitis --- kolesistitis
+kolesistitis 0.9814947937210472
+peritonitis 0.01194484849950159
+apendisitis 0.004758762636223219
+keracunan-makanan 0.0005777857268749648
+disentri 0.00032234369369543985
+
+kolesistitis --- kolesistitis
+kolesistitis 0.9878870794252353
+peritonitis 0.008415850090787472
+hepatitis-b 0.0017916276936134695
+apendisitis 0.0006096052501136413
+keracunan-makanan 0.00040708411347195177
+
+kolesistitis --- kolesistitis
+kolesistitis 0.8983405200377005
+apendisitis 0.047911494402010375
+taeniasis 0.013276533046836674
+gastritis 0.01193191363686433
+peritonitis 0.010932856171485261
+
+peritonitis --- apendisitis
+peritonitis 0.6225059132576922
+taeniasis 0.1574380484514088
+disentri 0.1536543521429458
+askariasis 0.0176004076091011
+apendisitis 0.012625605646415052
+
+peritonitis --- apendisitis
+peritonitis 0.637710371994892
+apendisitis 0.2376414760519924
+taeniasis 0.05028677749870504
+kolesistitis 0.028120610426888844
+keracunan-makanan 0.02623024349977452
+
+peritonitis --- apendisitis
+peritonitis 0.971618679960365
+apendisitis 0.01974936705997467
+kolesistitis 0.0032717771876216682
+keracunan-makanan 0.0013871985223249687
+strongiloidiasis 0.0012218674064883245
+
+peritonitis --- peritonitis
+peritonitis 0.7912777203961675
+kolesistitis 0.15045580654961527
+apendisitis 0.05254012292208766
+gastroenteritis 0.0012404265329923711
+keracunan-makanan 0.0011598482223304518
+
+peritonitis --- peritonitis
+peritonitis 0.9842160225048784
+keracunan-makanan 0.007213277807947766
+apendisitis 0.004243574752037565
+kolesistitis 0.001546625178221963
+taeniasis 0.0009877706248507035
+
+peritonitis --- peritonitis
+peritonitis 0.6798190163309858
+kolesistitis 0.12590525659599514
+apendisitis 0.06280987857396551
+keracunan-makanan 0.0533824817177944
+disentri 0.029781812764071255
+
+serumen-prop --- serumen-prop
+serumen-prop 0.8569529294846231
+benda-asing-di-telinga 0.10840187166697039
+otitis-eksterna 0.028627097193597056
+otitis-media 0.006010864971058611
+perdarahan-subkonjungtiva 2.635638999747497e-06
+
+serumen-prop --- serumen-prop
+serumen-prop 0.9633279777836021
+benda-asing-di-telinga 0.03412023534062358
+otitis-eksterna 0.0020896511849004544
+otitis-media 0.000450466935275164
+perdarahan-subkonjungtiva 2.962805424238778e-06
+
+serumen-prop --- serumen-prop
+serumen-prop 0.9823838526165066
+otitis-eksterna 0.013126881098212135
+benda-asing-di-telinga 0.004428477171825009
+otitis-media 5.846625967297855e-05
+perdarahan-subkonjungtiva 8.459957945950691e-07
+
+benda-asing-di-telinga --- benda-asing-di-telinga
+benda-asing-di-telinga 0.9908011490105954
+serumen-prop 0.007005664689973907
+otitis-media 0.0013213023511679915
+otitis-eksterna 0.0007164153305967149
+perdarahan-subkonjungtiva 5.7356990445208505e-05
+
+benda-asing-di-telinga --- benda-asing-di-telinga
+benda-asing-di-telinga 0.9514653661265811
+serumen-prop 0.03700143090492247
+otitis-eksterna 0.008324472517636431
+otitis-media 0.0019032680168569133
+perdarahan-subkonjungtiva 0.0006664663223465405
+
+benda-asing-di-telinga --- benda-asing-di-telinga
+benda-asing-di-telinga 0.9482517432295618
+otitis-eksterna 0.04977813711780528
+otitis-media 0.0014484957188801704
+serumen-prop 0.0005120036960688503
+perdarahan-subkonjungtiva 4.19189219052419e-06
+
+askariasis --- askariasis
+askariasis 0.9667799620597082
+tuberkulosis 0.007814946783257518
+morbili 0.005379185707113365
+strongiloidiasis 0.004587147128315375
+skistosomiasis 0.002757883297104022
+
+askariasis --- askariasis
+askariasis 0.9934811423916502
+ankilostomiasis 0.0030913780544016972
+taeniasis 0.0017914010080690786
+strongiloidiasis 0.0011223423924194378
+disentri 0.00021894901209733224
+
+askariasis --- askariasis
+askariasis 0.9245904823916733
+ppok-penyakit-paru-obstruktif-kronis 0.06433888952242775
+rhinitis 0.0017366462854839883
+tuberkulosis 0.0012556167044825218
+gagal-jantung 0.0012045333380224718
+
+ankilostomiasis --- ankilostomiasis
+ankilostomiasis 0.7640935946202944
+strongiloidiasis 0.2123024442680213
+taeniasis 0.017251139349094967
+apendisitis 0.0013920520900027441
+keracunan-makanan 0.0013279841828787834
+
+ankilostomiasis --- ankilostomiasis
+ankilostomiasis 0.6004762711180277
+taeniasis 0.24209122467399077
+strongiloidiasis 0.0758370803244185
+apendisitis 0.04297733005397996
+keracunan-makanan 0.013311473465816546
+
+ankilostomiasis --- ankilostomiasis
+ankilostomiasis 0.6009529356789125
+peritonitis 0.08763143782821492
+kolesistitis 0.061584570299659754
+taeniasis 0.05005855357591958
+gastroenteritis 0.04986647530068725
+
+skistosomiasis --- skistosomiasis
+skistosomiasis 0.9716464821725104
+peritonitis 0.012439918381723876
+leptospirosis 0.00492239599808702
+influenza 0.004229648714413728
+keracunan-makanan 0.0012355580420032554
+
+skistosomiasis --- skistosomiasis
+skistosomiasis 0.7358430671530878
+disentri 0.21533587699038623
+leptospirosis 0.021967436601033813
+strongiloidiasis 0.01685836168585063
+gastroenteritis 0.002978315353497243
+
+skistosomiasis --- skistosomiasis
+skistosomiasis 0.9902340076136682
+ankilostomiasis 0.00531358255681424
+disentri 0.002177163138622732
+strongiloidiasis 0.0016740352895058925
+leptospirosis 0.0003701712713973947
+
+taeniasis --- taeniasis
+taeniasis 0.9874688457122779
+askariasis 0.0036572920211565807
+keracunan-makanan 0.003185384769187491
+peritonitis 0.001904839594352373
+ankilostomiasis 0.0017992947495656575
+
+taeniasis --- taeniasis
+taeniasis 0.6537524479324093
+ankilostomiasis 0.3026891843636339
+peritonitis 0.009710443381711979
+apendisitis 0.007737175594647389
+disentri 0.0067258482297572865
+
+taeniasis --- taeniasis
+taeniasis 0.9543914305943297
+strongiloidiasis 0.03019909259929251
+askariasis 0.005891305127125516
+ankilostomiasis 0.004347558653509134
+peritonitis 0.0021478716609311574
+
+strongiloidiasis --- strongiloidiasis
+strongiloidiasis 0.9076366535920667
+ankilostomiasis 0.023809456359064885
+taeniasis 0.013438806854562677
+peritonitis 0.011737180153301942
+skistosomiasis 0.011667824088759774
+
+strongiloidiasis --- strongiloidiasis
+strongiloidiasis 0.9172098121858547
+ppok-penyakit-paru-obstruktif-kronis 0.039704012889713265
+lupus-eritematosus-sistemik 0.012652999004853428
+ankilostomiasis 0.01093662861520532
+taeniasis 0.008148330366976545
+
+strongiloidiasis --- strongiloidiasis
+strongiloidiasis 0.9116016637818911
+ankilostomiasis 0.08768271583584226
+skistosomiasis 0.0005073071416216594
+taeniasis 0.00015025062272102507
+alergi-makanan 2.4530319244833874e-05
+
+trikiasis --- mata-kering
+trikiasis 0.7518446760329665
+perdarahan-subkonjungtiva 0.09572096569864198
+episkleritis 0.07249930804603634
+mata-kering 0.05147396401465385
+konjungtivitis 0.020747218263684197
+
+perdarahan-subkonjungtiva --- mata-kering
+perdarahan-subkonjungtiva 0.32536898704757156
+episkleritis 0.2195514632600023
+hifema 0.14373926700523815
+trikiasis 0.09757842811555602
+konjungtivitis 0.07240331008300438
+
+konjungtivitis --- mata-kering
+konjungtivitis 0.5211539274035321
+mata-kering 0.3434732041610594
+hipermetropia 0.03448750406392872
+trikiasis 0.025540460152486642
+episkleritis 0.0167920233145407
+
+buta-senja --- buta-senja
+buta-senja 0.9997603839181967
+perdarahan-subkonjungtiva 7.936012589377196e-05
+episkleritis 5.355037652045194e-05
+retinopati-diabetik 2.370100675176072e-05
+astigmatisme 1.0792625397600343e-05
+
+buta-senja --- buta-senja
+buta-senja 0.9993698523469968
+astigmatisme 0.00023734500958203116
+retinopati-diabetik 0.00023691748541938916
+miopia-ringan 5.9232413953815004e-05
+hipermetropia 3.2709109133023495e-05
+
+buta-senja --- buta-senja
+buta-senja 0.9997162902755913
+perdarahan-subkonjungtiva 7.935662577805966e-05
+episkleritis 5.35480147233637e-05
+presbiopia 2.9512794710848674e-05
+retinopati-diabetik 2.3699961437565528e-05
+
+hordeolum-bintitan --- hordeolum-bintitan
+hordeolum-bintitan 0.4893628533887159
+konjungtivitis 0.2599655437713744
+perdarahan-subkonjungtiva 0.13084331726388934
+mata-kering 0.0959468372269087
+episkleritis 0.02102143874057863
+
+hordeolum-bintitan --- hordeolum-bintitan
+hordeolum-bintitan 0.9925921471971436
+perdarahan-subkonjungtiva 0.0020515937839447437
+episkleritis 0.0013843680105084318
+blefaritis 0.0009022644296530066
+konjungtivitis 0.0008369799904016753
+
+hordeolum-bintitan --- hordeolum-bintitan
+hordeolum-bintitan 0.992366262932247
+konjungtivitis 0.0030124422677025595
+perdarahan-subkonjungtiva 0.002105823620005481
+episkleritis 0.001014972177840658
+blefaritis 0.0007731935153769879
+
+konjungtivitis --- konjungtivitis
+konjungtivitis 0.7537993734566165
+mata-kering 0.19474606256002613
+episkleritis 0.023704344697521196
+blefaritis 0.019347517252053144
+hordeolum-bintitan 0.004145896554011392
+
+hordeolum-bintitan --- konjungtivitis
+hordeolum-bintitan 0.712458206947221
+blefaritis 0.1410523318804597
+konjungtivitis 0.08326583936272704
+episkleritis 0.050498069358158246
+perdarahan-subkonjungtiva 0.006803335818877869
+
+konjungtivitis --- konjungtivitis
+konjungtivitis 0.6547116676403382
+hordeolum-bintitan 0.15685582133327122
+episkleritis 0.09453849849250989
+blefaritis 0.05281340785632029
+perdarahan-subkonjungtiva 0.024963869629366406
+
+konjungtivitis --- blefaritis
+konjungtivitis 0.3955898045725345
+blefaritis 0.35102001992402754
+hordeolum-bintitan 0.22114261255213782
+perdarahan-subkonjungtiva 0.021117132800010548
+episkleritis 0.010178108966087725
+
+blefaritis --- blefaritis
+blefaritis 0.9444694262103106
+hordeolum-bintitan 0.02891232937378499
+konjungtivitis 0.016895091878829326
+episkleritis 0.007318809318951763
+trikiasis 0.0021685360945042226
+
+blefaritis --- blefaritis
+blefaritis 0.9969575438725876
+konjungtivitis 0.0016212748021254548
+hordeolum-bintitan 0.0012947500569773893
+episkleritis 8.938648466489416e-05
+trikiasis 2.6484884345153594e-05
+
+trikiasis --- perdarahan-subkonjungtiva
+trikiasis 0.512336981076795
+perdarahan-subkonjungtiva 0.34167093645443253
+episkleritis 0.13833098489073534
+hordeolum-bintitan 0.0015054124188729327
+konjungtivitis 0.0014280790805054114
+
+perdarahan-subkonjungtiva --- perdarahan-subkonjungtiva
+perdarahan-subkonjungtiva 0.8204651584447926
+trikiasis 0.0798890191844067
+episkleritis 0.0790901289925628
+mata-kering 0.010938973513417046
+konjungtivitis 0.007348481101336113
+
+perdarahan-subkonjungtiva --- perdarahan-subkonjungtiva
+perdarahan-subkonjungtiva 0.8133721939299331
+episkleritis 0.1496849276258256
+trikiasis 0.022175544833455567
+konjungtivitis 0.0033996447777203355
+hifema 0.002592539379145099
+
+astigmatisme --- astigmatisme
+astigmatisme 0.9942973182180255
+hipermetropia 0.0027964612074881713
+miopia-ringan 0.002301849021129724
+buta-senja 0.00048229217585575243
+retinopati-diabetik 7.609027377709917e-05
+
+astigmatisme --- astigmatisme
+astigmatisme 0.8293150675849189
+hipermetropia 0.08979927216192918
+hipertensi 0.022341264708319916
+miopia-ringan 0.020696594155415884
+hifema 0.011973236288257241
+
+astigmatisme --- astigmatisme
+astigmatisme 0.9138360145700468
+hipermetropia 0.056543603401521744
+miopia-ringan 0.029618077972225536
+presbiopia 9.655010484516275e-07
+hipertensi 4.367420395269132e-07
+
+astigmatisme --- hipermetropia
+astigmatisme 0.8848018632074038
+miopia-ringan 0.1126598800952529
+hipermetropia 0.002488505240270801
+hipertensi 1.827385167834969e-05
+hifema 9.793409052620244e-06
+
+hipermetropia --- hipermetropia
+hipermetropia 0.9137061963445955
+astigmatisme 0.05479394742045145
+miopia-ringan 0.03107844205253708
+presbiopia 0.0002696889599600334
+retinopati-diabetik 4.10933496095701e-05
+
+hipermetropia --- hipermetropia
+hipermetropia 0.9137061963445955
+astigmatisme 0.05479394742045145
+miopia-ringan 0.03107844205253708
+presbiopia 0.0002696889599600334
+retinopati-diabetik 4.10933496095701e-05
+
+miopia-ringan --- miopia-ringan
+miopia-ringan 0.6576934110993979
+astigmatisme 0.33541270880009644
+hipermetropia 0.006603437704501851
+hipertensi 0.0001066803180874733
+hifema 5.717262081819786e-05
+
+miopia-ringan --- miopia-ringan
+miopia-ringan 0.9030149849926734
+astigmatisme 0.0657889477489373
+hipermetropia 0.009066539361650375
+retinopati-diabetik 0.005970040328639227
+hifema 0.004317399696023979
+
+miopia-ringan --- miopia-ringan
+miopia-ringan 0.976880799402628
+astigmatisme 0.019927718877689595
+hipermetropia 0.0027462887578315826
+retinopati-diabetik 0.00011742516842577549
+hifema 8.49192565810635e-05
+
+astigmatisme --- presbiopia
+astigmatisme 0.9031683115954097
+miopia-ringan 0.05122657767330153
+hipermetropia 0.04445281533633629
+katarak 0.0008096498934287019
+retinopati-diabetik 0.00011289023980418375
+
+astigmatisme --- presbiopia
+astigmatisme 0.8247177973503973
+hipermetropia 0.08930147399434707
+miopia-ringan 0.07350665546473431
+presbiopia 0.006834296479159214
+hipertensi 0.0031739167038382756
+
+presbiopia --- presbiopia
+presbiopia 0.9991991426893213
+hipermetropia 0.0004671103764137399
+miopia-ringan 0.000107657820087738
+astigmatisme 7.84338556748777e-05
+retinopati-diabetik 3.914628727809178e-05
+
+presbiopia --- katarak
+presbiopia 0.9464488648529397
+hipermetropia 0.024334773384648574
+katarak 0.011798678004678105
+miopia-ringan 0.005608585865795187
+astigmatisme 0.00408612225270241
+
+retinopati-diabetik --- katarak
+retinopati-diabetik 0.3879922509010248
+perdarahan-subkonjungtiva 0.19684059556224717
+katarak 0.11042397547193412
+presbiopia 0.07320518016777798
+episkleritis 0.036224585153568106
+
+katarak --- katarak
+katarak 0.9516482110504765
+perdarahan-subkonjungtiva 0.015421799134434094
+glaukoma 0.012061423576359228
+retinopati-diabetik 0.0033775432134827794
+episkleritis 0.0028380745057737275
+
+glaukoma --- glaukoma
+glaukoma 0.9983493828898989
+perdarahan-subkonjungtiva 0.0012034293764437414
+episkleritis 0.00022146717143774327
+trikiasis 9.842985397233047e-05
+hifema 7.594896139840327e-05
+
+glaukoma --- glaukoma
+glaukoma 0.9841529591378274
+hifema 0.009882704715183138
+retinopati-diabetik 0.0015184074226697976
+perdarahan-subkonjungtiva 0.001016842917123432
+astigmatisme 0.0008297167804955079
+
+glaukoma --- glaukoma
+glaukoma 0.998501477274027
+perdarahan-subkonjungtiva 0.0009847740386565514
+episkleritis 0.0001812280181252372
+apendisitis 8.96522089583866e-05
+gastritis 6.876731937148977e-05
+
+trikiasis --- trikiasis
+trikiasis 0.8902362085236825
+hifema 0.05418904488815294
+episkleritis 0.029560676935925224
+konjungtivitis 0.01137321502874312
+perdarahan-subkonjungtiva 0.005575573496145009
+
+blefaritis --- trikiasis
+blefaritis 0.9986662115466974
+hordeolum-bintitan 0.0007074376941298892
+perdarahan-subkonjungtiva 0.0002653904955348217
+episkleritis 4.8839826850699825e-05
+konjungtivitis 4.218320716789435e-05
+
+episkleritis --- trikiasis
+episkleritis 0.48319739576070114
+trikiasis 0.42950879623173266
+konjungtivitis 0.04609240237127646
+blefaritis 0.015616105923388432
+perdarahan-subkonjungtiva 0.00828527770508744
+
+episkleritis --- episkleritis
+episkleritis 0.6746199959289227
+trikiasis 0.19988740620116055
+konjungtivitis 0.06435228453810624
+perdarahan-subkonjungtiva 0.042414380173857465
+hordeolum-bintitan 0.010278346886426308
+
+episkleritis --- episkleritis
+episkleritis 0.46755628252853215
+trikiasis 0.4156055844698033
+konjungtivitis 0.04460039001575262
+perdarahan-subkonjungtiva 0.029395971123764512
+hifema 0.028569968629377704
+
+episkleritis --- episkleritis
+episkleritis 0.7794289151399003
+perdarahan-subkonjungtiva 0.19251522538198138
+trikiasis 0.015746038689694916
+hifema 0.005522600550538355
+glaukoma 0.005090530777662765
+
+hifema --- hifema
+hifema 0.8870354079968258
+perdarahan-subkonjungtiva 0.06788536285690017
+hordeolum-bintitan 0.016450772240312023
+episkleritis 0.012492946896784811
+trikiasis 0.006786292141463312
+
+hifema --- hifema
+hifema 0.9946627502290619
+retinopati-diabetik 0.00126299892985475
+perdarahan-subkonjungtiva 0.0008458016583580429
+astigmatisme 0.0006901516616704773
+trikiasis 0.0005580445559726661
+
+hifema --- hifema
+hifema 0.6553171812170542
+episkleritis 0.17371862731172127
+perdarahan-subkonjungtiva 0.08581534515937601
+trikiasis 0.055148770575149345
+konjungtivitis 0.011836494832853343
+
+retinopati-diabetik --- retinopati-diabetik
+retinopati-diabetik 0.9703057456655048
+buta-senja 0.023719803312209964
+astigmatisme 0.003748978966808836
+miopia-ringan 0.0009356045634042199
+hipermetropia 0.00051665616386334
+
+retinopati-diabetik --- retinopati-diabetik
+retinopati-diabetik 0.7912936035222699
+astigmatisme 0.04804372816609698
+hipermetropia 0.03641564458339613
+miopia-ringan 0.029974782276128643
+katarak 0.028662451462727907
+
+hifema --- retinopati-diabetik
+hifema 0.9184783619754252
+astigmatisme 0.021030594671542134
+hipermetropia 0.015940533554945367
+miopia-ringan 0.013121119456791702
+retinopati-diabetik 0.010496356370059122
+
+otitis-eksterna --- otitis-eksterna
+otitis-eksterna 0.7501202997721547
+serumen-prop 0.18901406970518528
+benda-asing-di-telinga 0.04108119471428585
+perdarahan-subkonjungtiva 0.009749260865327491
+episkleritis 0.0017941569897797004
+
+otitis-eksterna --- otitis-eksterna
+otitis-eksterna 0.8729171971467496
+otitis-media 0.09896511994304609
+benda-asing-di-telinga 0.019470205036850752
+serumen-prop 0.008551025604702845
+filariasis 3.582063843470943e-05
+
+otitis-eksterna --- otitis-eksterna
+otitis-eksterna 0.8711879493354755
+benda-asing-di-telinga 0.06679624389096737
+serumen-prop 0.04190845820418464
+otitis-media 0.01728458728001758
+perdarahan-subkonjungtiva 0.0014410796407327284
+
+otitis-media --- otitis-media
+otitis-media 0.9788462488929892
+otitis-eksterna 0.018162906652273148
+benda-asing-di-telinga 0.0015915397143334445
+serumen-prop 0.0013979613283382174
+malaria 4.622129172104166e-07
+
+otitis-media --- otitis-media
+otitis-media 0.6719552463894307
+otitis-eksterna 0.13715255558599768
+benda-asing-di-telinga 0.13219916704308685
+serumen-prop 0.05805991565914507
+filariasis 0.0002432156495043301
+
+otitis-eksterna --- otitis-media
+otitis-eksterna 0.5812601615318755
+serumen-prop 0.28707134508308874
+otitis-media 0.03721104061793797
+benda-asing-di-telinga 0.03494031397705517
+filariasis 0.01111160848216291
+

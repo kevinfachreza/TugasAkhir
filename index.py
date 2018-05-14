@@ -312,7 +312,7 @@ def generate_rules(filteredList,threshold):
                 right_string = right_string.replace(" ","")
 
                 #print 'RULES :'+ str(subset_string) + " || " + str(left_string) + " >> " + str(right_string) + " || " + str(support_subset) + " / " + str(support_left) + " = " + str(support)
-                query = 'INSERT INTO rules_5(items,result,probability) VALUES("'+left_string+'","'+right_string+'","'+str(support)+'");'
+                query = 'INSERT INTO rules_12(items,result,probability) VALUES("'+left_string+'","'+right_string+'","'+str(support)+'");'
                 print query
                 cursor.execute(query)
                 cnx.commit()
@@ -325,7 +325,7 @@ if __name__ == '__main__':
 
 
 	database =[]
-	min_support = 5;
+	min_support = 12;
 	min_probability = 0.5;
 
 

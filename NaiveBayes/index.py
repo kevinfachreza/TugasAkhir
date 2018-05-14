@@ -21,16 +21,18 @@ seed = 7
 numpy.random.seed(seed)
 
 #assigning predictor and target variables
-dataframe = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/dataset/classifier-training-2.csv", skipinitialspace=True)
+dataframe = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/dataset/classifier-training-t23.csv", skipinitialspace=True)
 dataset = dataframe.values
-X_train = dataset[:,0:388]
-Y_train = dataset[:,388]
+jumlah_gejala = len(dataset[0]) - 1
+
+X_train = dataset[:,0:jumlah_gejala]
+Y_train = dataset[:,jumlah_gejala]
 
 #assigning testing
-dataframe = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/dataset/classifier-testing-2.csv", skipinitialspace=True)
+dataframe = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/dataset/classifier-testing-t23.csv", skipinitialspace=True)
 dataset = dataframe.values
-X_test = dataset[:,0:388]
-Y_test = dataset[:,388]
+X_test = dataset[:,0:jumlah_gejala]
+Y_test = dataset[:,jumlah_gejala]
 
 #label
 label = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/dataset/label.csv")
@@ -59,33 +61,38 @@ score2 = loaded_model.score(X_test, Y_test)
 
 predictions = model.predict_proba(X_test)
 
-
 #print hasil
 index = 0
-for pred in predictions:
-    top5 = pred.argsort()[-5:][::-1]
+filewrite = '../Users/Kevin/PycharmProjects/TugasAkhir/laporan/t23/nb_prediction_result.txt'
+with open(filewrite, 'w') as result_file:
+    result_file.write('jumlah gejala ' + str(jumlah_gejala) + '\n')
+    result_file.write('jumlah diagnosis ' + str(len(class_map)) + '\n')
+    result_file.write('akurasi ' + str(score) + '\n\n')
 
-    item_pred = top5[0]
-    item_pred_str = class_map[item_pred]
+    for pred in predictions:
+        top5 = pred.argsort()[-5:][::-1]
 
-    item_true = Y_test[index]
+        item_pred = top5[0]
+        item_pred_str = class_map[item_pred]
 
-    string = str(item_pred_str) + ' --- ' + str(item_true)
-    print(string)
+        item_true = Y_test[index]
 
-    for item in top5:
-        print (class_map[item], pred[item])
-        #print (item)
-    print ("")
-    print ("")
+        string = str(item_pred_str) + ' --- ' + str(item_true)
+        #print(string)
+        result_file.write(string+'\n')
 
-    index += 1
+        for item in top5:
+            #print (class_map[item], pred[item])
+            result_file.write(str(class_map[item]) + ' '+ str(pred[item])+'\n')
+            #print (item)
+        result_file.write('\n')
+        #print ("")
+        #print ("")
 
-print(score)
-print(score2)
+        index += 1
 
 
-
+print("PREDICT RESULT DONE")
 
 #-----------------------------------------
 #PRINT CONFUSION MATRIX
@@ -118,32 +125,60 @@ for i in range(size):
 
 #ambil data fp fn tn tp
 
-for i in range(size):
-    row = cm[i]
-    TP = cm[i][i]
+filewrite = '../Users/Kevin/PycharmProjects/TugasAkhir/laporan/t23/nb_cm_class.txt'
+with open(filewrite, 'w') as the_file:
+    for i in range(size):
+        row = cm[i]
+        TP = cm[i][i]
 
-    #calculate FP
-    FN = 0
-    for j in range(size):
-        val = cm[i][j]
-        if(i != j):
-            FN = FN + val
+        #calculate FP
+        FN = 0
+        for j in range(size):
+            val = cm[i][j]
+            if(i != j):
+                FN = FN + val
 
-    FP = 0
-    for j in range(size):
-        val = cm[j][i]
-        if(i != j):
-            FP = FP + val
+        FP = 0
+        for j in range(size):
+            val = cm[j][i]
+            if(i != j):
+                FP = FP + val
 
-    TN = total_val - TP - FP - FN
-    print(table_rows[i])
-    print ("TP :",TP)
-    print ("FP :",FP)
-    print ("FN :",FN)
-    print ("TN :",TN)
-    print("")
-    print("")
+        TN = total_val - TP - FP - FN
+        """
+        print(table_rows[i])
+        print ("TP :",TP)
+        print ("FP :",FP)
+        print ("FN :",FN)
+        print ("TN :",TN)
+        print("")
+        print("")
+        """
+
+        the_file.write(table_rows[i]+'\n')
+        the_file.write("TP :"+str(TP)+'\n')
+        the_file.write("FP :"+str(FP)+'\n')
+        the_file.write("FN :"+str(FN)+'\n')
+        the_file.write("TN :"+str(TN)+'\n')
+        the_file.write('\n')
 
 
-#printout semua confusion matrix
-print (cm_pd)
+print("CONFUSION MATRIX EACH CLASS DONE")
+
+
+#printout semua confusion matrix dengan model pandas
+#print (cm_pd)
+
+#print confusion matrix
+
+
+filewrite = '../Users/Kevin/PycharmProjects/TugasAkhir/laporan/t23/nb_cm_all.csv'
+with open(filewrite, 'w') as new_file:
+    #print("," + ",".join(class_map))
+    new_file.write("," + ",".join(class_map) + '\n')
+    for i in range(size):
+        #print ( class_map[i] + ',' + ','.join(map(str, cm[i])))
+        new_file.write ( class_map[i] + ',' + ','.join(map(str, cm[i]))  + '\n')
+
+
+print("CONFUSION MATRIX DONE")

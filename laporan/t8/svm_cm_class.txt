@@ -1,0 +1,396 @@
+alergi-makanan
+TP :2
+FP :0
+FN :1
+TN :196
+
+anemia
+TP :3
+FP :0
+FN :0
+TN :196
+
+angina-pektoris-stabil
+TP :1
+FP :1
+FN :2
+TN :195
+
+ankilostomiasis
+TP :2
+FP :0
+FN :1
+TN :196
+
+apendisitis
+TP :0
+FP :0
+FN :3
+TN :196
+
+asam-lambung
+TP :3
+FP :1
+FN :0
+TN :195
+
+askariasis
+TP :3
+FP :0
+FN :0
+TN :196
+
+astigmatisme
+TP :3
+FP :3
+FN :0
+TN :193
+
+benda-asing-di-telinga
+TP :3
+FP :0
+FN :0
+TN :196
+
+blefaritis
+TP :3
+FP :1
+FN :0
+TN :195
+
+bronkopneumonia
+TP :0
+FP :0
+FN :3
+TN :196
+
+buta-senja
+TP :3
+FP :0
+FN :0
+TN :196
+
+cardiorespiratory-arrest
+TP :3
+FP :0
+FN :0
+TN :196
+
+demam-berdarah-dengue
+TP :1
+FP :0
+FN :2
+TN :196
+
+disentri
+TP :3
+FP :0
+FN :0
+TN :196
+
+episkleritis
+TP :3
+FP :3
+FN :0
+TN :193
+
+epistaksis
+TP :3
+FP :0
+FN :0
+TN :196
+
+faringitis
+TP :2
+FP :2
+FN :1
+TN :194
+
+filariasis
+TP :3
+FP :2
+FN :0
+TN :194
+
+gagal-jantung
+TP :2
+FP :0
+FN :1
+TN :196
+
+gastritis
+TP :2
+FP :1
+FN :1
+TN :195
+
+gastroenteritis
+TP :0
+FP :0
+FN :3
+TN :196
+
+glaukoma
+TP :3
+FP :1
+FN :0
+TN :195
+
+hemoroid
+TP :3
+FP :0
+FN :0
+TN :196
+
+hepatitis-a
+TP :1
+FP :1
+FN :2
+TN :195
+
+hepatitis-b
+TP :2
+FP :2
+FN :1
+TN :194
+
+hifema
+TP :3
+FP :1
+FN :0
+TN :195
+
+hipermetropia
+TP :2
+FP :0
+FN :1
+TN :196
+
+hipertensi
+TP :0
+FP :0
+FN :3
+TN :196
+
+hiv-aids
+TP :2
+FP :0
+FN :1
+TN :196
+
+hordeolum-bintitan
+TP :3
+FP :1
+FN :0
+TN :195
+
+infark-miokard
+TP :3
+FP :2
+FN :0
+TN :194
+
+influenza
+TP :3
+FP :1
+FN :0
+TN :195
+
+katarak
+TP :1
+FP :0
+FN :2
+TN :196
+
+keracunan-makanan
+TP :2
+FP :8
+FN :1
+TN :188
+
+kolesistitis
+TP :3
+FP :0
+FN :0
+TN :196
+
+konjungtivitis
+TP :1
+FP :2
+FN :2
+TN :194
+
+laringitis
+TP :2
+FP :0
+FN :1
+TN :196
+
+lepra
+TP :2
+FP :0
+FN :2
+TN :195
+
+leptospirosis
+TP :3
+FP :2
+FN :0
+TN :194
+
+limfadenitis
+TP :3
+FP :0
+FN :0
+TN :196
+
+lupus-eritematosus-sistemik
+TP :3
+FP :0
+FN :0
+TN :196
+
+malaria
+TP :3
+FP :2
+FN :0
+TN :194
+
+mata-kering
+TP :0
+FP :0
+FN :3
+TN :196
+
+miopia-ringan
+TP :3
+FP :0
+FN :0
+TN :196
+
+morbili
+TP :3
+FP :0
+FN :0
+TN :196
+
+otitis-eksterna
+TP :1
+FP :0
+FN :2
+TN :196
+
+otitis-media
+TP :2
+FP :1
+FN :1
+TN :195
+
+perdarahan-subkonjungtiva
+TP :1
+FP :1
+FN :2
+TN :195
+
+peritonitis
+TP :2
+FP :1
+FN :1
+TN :195
+
+pneumonia
+TP :3
+FP :3
+FN :0
+TN :193
+
+pneumotoraks
+TP :3
+FP :1
+FN :0
+TN :195
+
+ppok-penyakit-paru-obstruktif-kronis
+TP :2
+FP :1
+FN :1
+TN :195
+
+presbiopia
+TP :1
+FP :1
+FN :2
+TN :195
+
+retinopati-diabetik
+TP :2
+FP :0
+FN :1
+TN :196
+
+rhinitis
+TP :3
+FP :0
+FN :0
+TN :196
+
+serumen-prop
+TP :3
+FP :2
+FN :0
+TN :194
+
+sinusitis
+TP :3
+FP :0
+FN :0
+TN :196
+
+skistosomiasis
+TP :3
+FP :0
+FN :0
+TN :196
+
+strongiloidiasis
+TP :2
+FP :1
+FN :1
+TN :195
+
+taeniasis
+TP :3
+FP :0
+FN :0
+TN :196
+
+takikardia
+TP :2
+FP :2
+FN :1
+TN :194
+
+tonsilitis
+TP :2
+FP :0
+FN :1
+TN :196
+
+trikiasis
+TP :0
+FP :2
+FN :3
+TN :194
+
+tuberkulosis
+TP :3
+FP :0
+FN :0
+TN :196
+
+varisela
+TP :3
+FP :0
+FN :0
+TN :196
+
