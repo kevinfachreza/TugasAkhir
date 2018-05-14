@@ -40,7 +40,7 @@ def init(min_support, min_probability):
 	min_probability = 0.5;
 
 def readFile():
-	lines = [line.rstrip('\n') for line in open('C:\\Users\\Kevin\\PycharmProjects\\AqeelaTugasAkhir\\gejala.csv')]
+	lines = [line.rstrip('\n') for line in open('C:\\Users\\Kevin\\PycharmProjects\\TugasAkhir\\dataset\\kasus-fptree-training.csv')]
 
 	gejala = []
 	for val in lines:
@@ -312,7 +312,7 @@ def generate_rules(filteredList,threshold):
                 right_string = right_string.replace(" ","")
 
                 #print 'RULES :'+ str(subset_string) + " || " + str(left_string) + " >> " + str(right_string) + " || " + str(support_subset) + " / " + str(support_left) + " = " + str(support)
-                query = 'INSERT INTO rules(items,result,probability) VALUES("'+left_string+'","'+right_string+'","'+str(support)+'");'
+                query = 'INSERT INTO rules_5(items,result,probability) VALUES("'+left_string+'","'+right_string+'","'+str(support)+'");'
                 print query
                 cursor.execute(query)
                 cnx.commit()
