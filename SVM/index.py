@@ -20,7 +20,7 @@ seed = 7
 numpy.random.seed(seed)
 
 #assigning predictor and target variables
-dataframe = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/dataset/classifier-training-t23.csv", skipinitialspace=True)
+dataframe = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/dataset/classifier-training-t18.csv", skipinitialspace=True)
 dataset = dataframe.values
 jumlah_gejala = len(dataset[0]) - 1
 
@@ -28,7 +28,7 @@ X_train = dataset[:,0:jumlah_gejala]
 Y_train = dataset[:,jumlah_gejala]
 
 #assigning testing
-dataframe = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/dataset/classifier-testing-t23.csv", skipinitialspace=True)
+dataframe = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/dataset/classifier-testing-t18.csv", skipinitialspace=True)
 dataset = dataframe.values
 X_test = dataset[:,0:jumlah_gejala]
 Y_test = dataset[:,jumlah_gejala]
@@ -62,12 +62,15 @@ predictions = model.predict_proba(X_test)
 
 #print hasil
 index = 0
-filewrite = '../Users/Kevin/PycharmProjects/TugasAkhir/laporan/t23/svm_prediction_result.txt'
+filewrite = '../Users/Kevin/PycharmProjects/TugasAkhir/laporan/t18/svm_prediction_result.txt'
 with open(filewrite, 'w') as result_file:
     result_file.write('jumlah gejala ' + str(jumlah_gejala) + '\n')
     result_file.write('jumlah diagnosis ' + str(len(class_map)) + '\n')
     result_file.write('akurasi ' + str(score) + '\n\n')
 
+    item_pred_IR = 0;
+    pred_class_score_array = []
+    item_count = 0;
     for pred in predictions:
         top5 = pred.argsort()[-5:][::-1]
 
@@ -80,16 +83,32 @@ with open(filewrite, 'w') as result_file:
         #print(string)
         result_file.write(string+'\n')
 
+        pred_class_score = 100;
+        pred_class_score_fix = 0;
         for item in top5:
             #print (class_map[item], pred[item])
             result_file.write(str(class_map[item]) + ' '+ str(pred[item])+'\n')
-            #print (item)
+            temp_pred = str(class_map[item])
+            temp_true = str(item_true)
+            
+            if(pred_class_score_fix == 0):
+                if(temp_true == temp_pred):
+                    pred_class_score_fix = pred_class_score
+                    item_pred_IR += 1
+                else:
+                    pred_class_score = pred_class_score - 20;
+
+        pred_class_score_array.append(pred_class_score_fix)
+        result_file.write('skor IR' + str(pred_class_score_fix) + '\n')
         result_file.write('\n')
         #print ("")
         #print ("")
 
         index += 1
 
+    pred_class_score_array_np = numpy.array(pred_class_score_array)
+    result_file.write('item found ' + str(item_pred_IR) + '/'+ str(index) + '\n')
+    result_file.write('item found skor ' + str(numpy.mean(pred_class_score_array_np)) + '\n')
 
 print("PREDICT RESULT DONE")
 
@@ -124,7 +143,7 @@ for i in range(size):
 
 #ambil data fp fn tn tp
 
-filewrite = '../Users/Kevin/PycharmProjects/TugasAkhir/laporan/t23/svm_cm_class.txt'
+filewrite = '../Users/Kevin/PycharmProjects/TugasAkhir/laporan/t18/svm_cm_class.txt'
 with open(filewrite, 'w') as the_file:
     for i in range(size):
         row = cm[i]
@@ -171,7 +190,7 @@ print("CONFUSION MATRIX EACH CLASS DONE")
 #print confusion matrix
 
 
-filewrite = '../Users/Kevin/PycharmProjects/TugasAkhir/laporan/t23/svm_cm_all.csv'
+filewrite = '../Users/Kevin/PycharmProjects/TugasAkhir/laporan/t18/svm_cm_all.csv'
 with open(filewrite, 'w') as new_file:
     #print("," + ",".join(class_map))
     new_file.write("," + ",".join(class_map) + '\n')

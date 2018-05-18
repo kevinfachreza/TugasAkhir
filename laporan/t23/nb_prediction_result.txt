@@ -8,6 +8,7 @@ sinusitis 0.06525850562614902
 ankilostomiasis 0.02965012564353794
 alergi-makanan 0.01357810483479246
 epistaksis 0.00422012676006842
+skor IR100
 
 rhinitis --- rhinitis
 rhinitis 0.9232606949279238
@@ -15,6 +16,7 @@ sinusitis 0.07600282040646655
 faringitis 0.00016391654128516682
 influenza 0.00016207568169065574
 epistaksis 0.00010362072894813916
+skor IR100
 
 rhinitis --- rhinitis
 rhinitis 0.6436639640319867
@@ -22,6 +24,7 @@ lepra 0.15865124743084677
 epistaksis 0.07804567465114454
 presbiopia 0.031608498233713506
 hemoroid 0.028330579898365467
+skor IR100
 
 influenza --- influenza
 influenza 0.7808710867339573
@@ -29,6 +32,7 @@ faringitis 0.10446299468490064
 sinusitis 0.06290405955791803
 tonsilitis 0.028238306782070424
 varisela 0.019391939496615756
+skor IR100
 
 influenza --- influenza
 influenza 0.8547034415533155
@@ -36,6 +40,7 @@ faringitis 0.11434010374950612
 sinusitis 0.01251849425950934
 tonsilitis 0.01236330984732532
 varisela 0.0038591767363698004
+skor IR100
 
 sinusitis --- influenza
 sinusitis 0.4663018373430888
@@ -43,6 +48,7 @@ influenza 0.2756439727655554
 varisela 0.11979217611268528
 morbili 0.0721723110629323
 faringitis 0.025812476279097288
+skor IR80
 
 influenza --- faringitis
 influenza 0.5954290491129629
@@ -50,6 +56,7 @@ faringitis 0.23896505831537224
 sinusitis 0.1308151126615202
 rhinitis 0.01716058148517913
 varisela 0.008554302292817487
+skor IR80
 
 sinusitis --- faringitis
 sinusitis 0.44977513033673483
@@ -57,6 +64,7 @@ influenza 0.3625562414199204
 faringitis 0.10670412184607689
 tonsilitis 0.04807354248091572
 varisela 0.019807970096206072
+skor IR60
 
 leptospirosis --- faringitis
 leptospirosis 0.37137691065929346
@@ -64,6 +72,7 @@ filariasis 0.26542473455043875
 faringitis 0.1312535758503129
 influenza 0.11680158300155996
 hiv-aids 0.03262117229053816
+skor IR60
 
 tonsilitis --- tonsilitis
 tonsilitis 0.5302076594489639
@@ -71,6 +80,7 @@ laringitis 0.2581459148519697
 faringitis 0.11144411741976132
 asam-lambung 0.05632274505861139
 peritonitis 0.020914599582914153
+skor IR100
 
 tonsilitis --- tonsilitis
 tonsilitis 0.942528216085235
@@ -78,6 +88,7 @@ faringitis 0.031697535352546644
 laringitis 0.009871348016704353
 epistaksis 0.002244230079855898
 filariasis 0.002207288651726314
+skor IR100
 
 tonsilitis --- tonsilitis
 tonsilitis 0.942528216085235
@@ -85,6 +96,7 @@ faringitis 0.031697535352546644
 laringitis 0.009871348016704353
 epistaksis 0.002244230079855898
 filariasis 0.002207288651726314
+skor IR100
 
 laringitis --- laringitis
 laringitis 0.9252889831773533
@@ -92,6 +104,7 @@ asam-lambung 0.07065843144263394
 epistaksis 0.0014024166136120564
 faringitis 0.00044017224029029755
 lepra 0.0003534089866302386
+skor IR100
 
 laringitis --- laringitis
 laringitis 0.9252889831773533
@@ -99,6 +112,7 @@ asam-lambung 0.07065843144263394
 epistaksis 0.0014024166136120564
 faringitis 0.00044017224029029755
 lepra 0.0003534089866302386
+skor IR100
 
 laringitis --- laringitis
 laringitis 0.4516790387287511
@@ -106,6 +120,7 @@ faringitis 0.24817451366179835
 influenza 0.21033205503563368
 sinusitis 0.03881616739075196
 morbili 0.027035141774720113
+skor IR100
 
 tuberkulosis --- pneumonia
 tuberkulosis 0.9513388140089285
@@ -113,6 +128,7 @@ bronkopneumonia 0.02386570554234115
 pneumonia 0.011181369435053332
 varisela 0.003572593245075165
 influenza 0.0030700396127688804
+skor IR60
 
 tuberkulosis --- pneumonia
 tuberkulosis 0.6662223698940477
@@ -120,6 +136,7 @@ bronkopneumonia 0.16846853723248267
 pneumonia 0.10962434904981248
 ppok-penyakit-paru-obstruktif-kronis 0.04354312801048599
 epistaksis 0.0029030243207198657
+skor IR60
 
 tuberkulosis --- pneumonia
 tuberkulosis 0.6534998398240534
@@ -127,6 +144,7 @@ bronkopneumonia 0.1652513741235209
 ppok-penyakit-paru-obstruktif-kronis 0.09396553256924661
 pneumonia 0.0645185431611327
 epistaksis 0.0062646906371133255
+skor IR40
 
 tuberkulosis --- bronkopneumonia
 tuberkulosis 0.4381267540059097
@@ -134,6 +152,7 @@ bronkopneumonia 0.2437373296837292
 pneumonia 0.23790388292663286
 ppok-penyakit-paru-obstruktif-kronis 0.0629974351395171
 epistaksis 0.004200044753536068
+skor IR80
 
 ppok-penyakit-paru-obstruktif-kronis --- bronkopneumonia
 ppok-penyakit-paru-obstruktif-kronis 0.31590962568835385
@@ -141,6 +160,7 @@ tuberkulosis 0.23967808482511468
 epistaksis 0.143602660860006
 asam-lambung 0.05694751295444743
 cardiorespiratory-arrest 0.038928963933704284
+skor IR0
 
 tuberkulosis --- bronkopneumonia
 tuberkulosis 0.7903388790786123
@@ -148,6 +168,7 @@ ppok-penyakit-paru-obstruktif-kronis 0.03788045492752694
 bronkopneumonia 0.033309007345777776
 gagal-jantung 0.03292156841805445
 anemia 0.016930234500593142
+skor IR60
 
 pneumotoraks --- pneumotoraks
 pneumotoraks 0.406300537067212
@@ -155,6 +176,7 @@ angina-pektoris-stabil 0.38956372517097726
 infark-miokard 0.07225138103417919
 cardiorespiratory-arrest 0.06427801465321106
 anemia 0.030652101044803315
+skor IR100
 
 pneumotoraks --- pneumotoraks
 pneumotoraks 0.9572652743088164
@@ -162,6 +184,7 @@ gagal-jantung 0.02574566627091217
 infark-miokard 0.007092834385612407
 ppok-penyakit-paru-obstruktif-kronis 0.0044884342596453455
 cardiorespiratory-arrest 0.0024584798352213773
+skor IR100
 
 pneumotoraks --- pneumotoraks
 pneumotoraks 0.9625488324733465
@@ -169,6 +192,7 @@ angina-pektoris-stabil 0.016779970607425337
 infark-miokard 0.011411172455580855
 cardiorespiratory-arrest 0.004263790531346766
 epistaksis 0.0014771257194763955
+skor IR100
 
 ppok-penyakit-paru-obstruktif-kronis --- ppok-penyakit-paru-obstruktif-kronis
 ppok-penyakit-paru-obstruktif-kronis 0.4157941305229054
@@ -176,6 +200,7 @@ anemia 0.11518662008778406
 gagal-jantung 0.11129980466558614
 pneumotoraks 0.06107298881237114
 angina-pektoris-stabil 0.058557198080043324
+skor IR100
 
 ppok-penyakit-paru-obstruktif-kronis --- ppok-penyakit-paru-obstruktif-kronis
 ppok-penyakit-paru-obstruktif-kronis 0.9735091828809094
@@ -183,6 +208,7 @@ tuberkulosis 0.023500704326564897
 gagal-jantung 0.001087691011539311
 bronkopneumonia 0.0006431444129853084
 askariasis 0.00032972926988802774
+skor IR100
 
 pneumotoraks --- ppok-penyakit-paru-obstruktif-kronis
 pneumotoraks 0.28215872215770876
@@ -190,6 +216,7 @@ angina-pektoris-stabil 0.21209999398559595
 epistaksis 0.1467004918718395
 cardiorespiratory-arrest 0.08749124751905801
 anemia 0.06556273292674844
+skor IR0
 
 epistaksis --- epistaksis
 epistaksis 0.3355642848690794
@@ -197,6 +224,7 @@ lepra 0.1860368395314177
 presbiopia 0.13590353537197702
 hemoroid 0.12180983540747582
 retinopati-diabetik 0.039865037042446615
+skor IR100
 
 epistaksis --- epistaksis
 epistaksis 0.3355642848690794
@@ -204,6 +232,7 @@ lepra 0.1860368395314177
 presbiopia 0.13590353537197702
 hemoroid 0.12180983540747582
 retinopati-diabetik 0.039865037042446615
+skor IR100
 
 epistaksis --- epistaksis
 epistaksis 0.2144215264667537
@@ -211,6 +240,7 @@ cardiorespiratory-arrest 0.1790315032254189
 hemoroid 0.17123703103634963
 lepra 0.11887529427316829
 presbiopia 0.08684071821903516
+skor IR100
 
 sinusitis --- sinusitis
 sinusitis 0.8742537160261478
@@ -218,6 +248,7 @@ rhinitis 0.043789317106243425
 epistaksis 0.025698227984307636
 lepra 0.0237451626575003
 presbiopia 0.004730810151656624
+skor IR100
 
 sinusitis --- sinusitis
 sinusitis 0.8921826663075759
@@ -225,6 +256,7 @@ influenza 0.039954088207281455
 rhinitis 0.022799661302881524
 laringitis 0.020428496527381865
 faringitis 0.009183610847195578
+skor IR100
 
 sinusitis --- sinusitis
 sinusitis 0.8480630200121428
@@ -232,6 +264,7 @@ hipertensi 0.03620240335411436
 anemia 0.019894419359564822
 epistaksis 0.01780597589678638
 rhinitis 0.010836093520959406
+skor IR100
 
 tuberkulosis --- tuberkulosis
 tuberkulosis 0.5627676199984268
@@ -239,6 +272,7 @@ epistaksis 0.13846905106278232
 askariasis 0.09533283482773347
 ppok-penyakit-paru-obstruktif-kronis 0.04615397943512096
 sinusitis 0.017696157464898013
+skor IR100
 
 ppok-penyakit-paru-obstruktif-kronis --- tuberkulosis
 ppok-penyakit-paru-obstruktif-kronis 0.6095961481920443
@@ -246,6 +280,7 @@ tuberkulosis 0.22524140285046776
 askariasis 0.09538973410717315
 epistaksis 0.02519121747949359
 gagal-jantung 0.018730112899521593
+skor IR80
 
 ppok-penyakit-paru-obstruktif-kronis --- tuberkulosis
 ppok-penyakit-paru-obstruktif-kronis 0.5283801741751908
@@ -253,6 +288,7 @@ tuberkulosis 0.16399545387377526
 epistaksis 0.06550503929024157
 gagal-jantung 0.05844497745577756
 askariasis 0.03543473199772646
+skor IR80
 
 morbili --- morbili
 morbili 0.9137326766880576
@@ -260,6 +296,7 @@ laringitis 0.0720936514370411
 lupus-eritematosus-sistemik 0.003291613549783736
 varisela 0.003033241533038539
 epistaksis 0.0013221540187210888
+skor IR100
 
 morbili --- morbili
 morbili 0.8982749504041644
@@ -267,6 +304,7 @@ lupus-eritematosus-sistemik 0.037374979083359454
 sinusitis 0.025124291494925014
 lepra 0.013511285648381888
 varisela 0.010436747366149891
+skor IR100
 
 morbili --- morbili
 morbili 0.30076370949700976
@@ -274,6 +312,7 @@ lepra 0.23696609388376935
 alergi-makanan 0.1225208609997381
 epistaksis 0.11967984539584306
 lupus-eritematosus-sistemik 0.08342684940304447
+skor IR100
 
 varisela --- varisela
 varisela 0.4315005808987833
@@ -281,6 +320,7 @@ lepra 0.20482563968677614
 epistaksis 0.10344729277109901
 askariasis 0.055837373781027176
 morbili 0.024759065208596137
+skor IR100
 
 epistaksis --- varisela
 epistaksis 0.22384196449865
@@ -288,6 +328,7 @@ filariasis 0.08806295440968676
 hemoroid 0.08125463311300979
 limfadenitis 0.07443337619150832
 varisela 0.06790489243245666
+skor IR20
 
 epistaksis --- varisela
 epistaksis 0.21840605827316464
@@ -295,6 +336,7 @@ filariasis 0.21481095820869978
 varisela 0.06625585120669164
 lepra 0.055038326684837456
 anemia 0.04880453325492919
+skor IR60
 
 malaria --- malaria
 malaria 0.990533843449373
@@ -302,6 +344,7 @@ keracunan-makanan 0.002971601530348123
 leptospirosis 0.00143462728363779
 disentri 0.0013393275384189188
 peritonitis 0.0010109907723164697
+skor IR100
 
 malaria --- malaria
 malaria 0.9915597544360203
@@ -309,6 +352,7 @@ keracunan-makanan 0.0035412848372715086
 leptospirosis 0.003077385319207727
 gastroenteritis 0.0006787368170508053
 disentri 0.0003420190562110394
+skor IR100
 
 malaria --- malaria
 malaria 0.9873529796743246
@@ -316,6 +360,7 @@ disentri 0.005244747383369382
 leptospirosis 0.0021450304791543256
 keracunan-makanan 0.002115756385016411
 gastroenteritis 0.0016896430490741072
+skor IR100
 
 leptospirosis --- leptospirosis
 leptospirosis 0.9629019551318218
@@ -323,6 +368,7 @@ malaria 0.03329990439598677
 hiv-aids 0.002870587676911191
 skistosomiasis 0.00021193010583445907
 disentri 0.0001575899475593191
+skor IR100
 
 leptospirosis --- leptospirosis
 leptospirosis 0.5937187392691026
@@ -330,6 +376,7 @@ malaria 0.18856370743177525
 peritonitis 0.08150596546469345
 apendisitis 0.04116882949492185
 demam-berdarah-dengue 0.032311223905801406
+skor IR100
 
 malaria --- leptospirosis
 malaria 0.47612223306291285
@@ -337,6 +384,7 @@ leptospirosis 0.4171993314530087
 disentri 0.016523628122723892
 keracunan-makanan 0.016231439763508406
 varisela 0.015961431051251928
+skor IR80
 
 filariasis --- filariasis
 filariasis 0.9537492639110406
@@ -344,6 +392,7 @@ limfadenitis 0.021985545834982318
 lupus-eritematosus-sistemik 0.016094518828498768
 epistaksis 0.004407778716199973
 lepra 0.0011107602364823946
+skor IR100
 
 filariasis --- filariasis
 filariasis 0.9425488617203821
@@ -351,6 +400,7 @@ limfadenitis 0.04780018645088333
 epistaksis 0.004356015746353562
 lepra 0.0010977159680810988
 presbiopia 0.0008019028987605404
+skor IR100
 
 filariasis --- filariasis
 filariasis 0.7332754930618123
@@ -358,6 +408,7 @@ limfadenitis 0.11156144804283771
 epistaksis 0.050832795899232924
 lepra 0.02818170204653474
 presbiopia 0.020587282339189314
+skor IR100
 
 epistaksis --- lepra
 epistaksis 0.3355642848690794
@@ -365,6 +416,7 @@ lepra 0.1860368395314177
 presbiopia 0.13590353537197702
 hemoroid 0.12180983540747582
 retinopati-diabetik 0.039865037042446615
+skor IR80
 
 epistaksis --- lepra
 epistaksis 0.3355642848690794
@@ -372,6 +424,7 @@ lepra 0.1860368395314177
 presbiopia 0.13590353537197702
 hemoroid 0.12180983540747582
 retinopati-diabetik 0.039865037042446615
+skor IR80
 
 epistaksis --- lepra
 epistaksis 0.3355642848690794
@@ -379,6 +432,7 @@ lepra 0.1860368395314177
 presbiopia 0.13590353537197702
 hemoroid 0.12180983540747582
 retinopati-diabetik 0.039865037042446615
+skor IR80
 
 epistaksis --- lepra
 epistaksis 0.3355642848690794
@@ -386,6 +440,7 @@ lepra 0.1860368395314177
 presbiopia 0.13590353537197702
 hemoroid 0.12180983540747582
 retinopati-diabetik 0.039865037042446615
+skor IR80
 
 keracunan-makanan --- keracunan-makanan
 keracunan-makanan 0.5457432813482712
@@ -393,6 +448,7 @@ peritonitis 0.29176934556199785
 gastroenteritis 0.06603493704314085
 askariasis 0.024306074407148305
 apendisitis 0.021053327413001418
+skor IR100
 
 peritonitis --- keracunan-makanan
 peritonitis 0.38693806170669287
@@ -400,6 +456,7 @@ apendisitis 0.21937502561359357
 keracunan-makanan 0.1409907829412058
 kolesistitis 0.11422005465831736
 gastroenteritis 0.05117965420765761
+skor IR60
 
 kolesistitis --- keracunan-makanan
 kolesistitis 0.6537538435541492
@@ -407,6 +464,7 @@ keracunan-makanan 0.08966441190039583
 apendisitis 0.07263931595046084
 peritonitis 0.06536871407846778
 gastritis 0.04323768806575053
+skor IR80
 
 ankilostomiasis --- alergi-makanan
 ankilostomiasis 0.22522568063024287
@@ -414,6 +472,7 @@ epistaksis 0.17631105962925506
 lepra 0.09774685145845903
 presbiopia 0.07140597914984823
 gastritis 0.06731876822207934
+skor IR0
 
 ankilostomiasis --- alergi-makanan
 ankilostomiasis 0.7864153698350259
@@ -421,6 +480,7 @@ strongiloidiasis 0.08208989556399111
 asam-lambung 0.04785000490287617
 faringitis 0.02065731533264896
 gastritis 0.011966457079299017
+skor IR0
 
 perdarahan-subkonjungtiva --- alergi-makanan
 perdarahan-subkonjungtiva 0.3426927858530114
@@ -428,6 +488,7 @@ episkleritis 0.175182698342892
 trikiasis 0.08650997449031674
 glaukoma 0.07019592220100851
 epistaksis 0.05201417417647722
+skor IR0
 
 leptospirosis --- demam-berdarah-dengue
 leptospirosis 0.2171730301416366
@@ -435,6 +496,7 @@ malaria 0.2107528358972529
 varisela 0.21064582965737289
 demam-berdarah-dengue 0.15889908781338108
 lupus-eritematosus-sistemik 0.09035348414102354
+skor IR40
 
 malaria --- demam-berdarah-dengue
 malaria 0.2710266885379332
@@ -442,6 +504,7 @@ apendisitis 0.18225237070992448
 demam-berdarah-dengue 0.11145988763674027
 keracunan-makanan 0.08765003107316767
 kolesistitis 0.06777980728881498
+skor IR60
 
 apendisitis --- demam-berdarah-dengue
 apendisitis 0.40072148173697975
@@ -449,6 +512,7 @@ kolesistitis 0.14902865023276127
 peritonitis 0.10303215324734066
 gastritis 0.060715376020754705
 malaria 0.05417373911398283
+skor IR0
 
 anemia --- anemia
 anemia 0.8435960051961232
@@ -456,6 +520,7 @@ hipertensi 0.0852841143707931
 takikardia 0.026803578802249185
 cardiorespiratory-arrest 0.02046818744899029
 gagal-jantung 0.005103493666159364
+skor IR100
 
 anemia --- anemia
 anemia 0.39866703488482297
@@ -463,6 +528,7 @@ hipertensi 0.2821252750450658
 takikardia 0.19000273625483977
 cardiorespiratory-arrest 0.04836433286486835
 angina-pektoris-stabil 0.04187388126828439
+skor IR100
 
 anemia --- anemia
 anemia 0.7364102468230311
@@ -470,6 +536,7 @@ hipertensi 0.14889614300456144
 takikardia 0.0655143029220068
 cardiorespiratory-arrest 0.035735074321094656
 gagal-jantung 0.008910106276481132
+skor IR100
 
 hiv-aids --- hiv-aids
 hiv-aids 0.9287747051873474
@@ -477,6 +544,7 @@ lupus-eritematosus-sistemik 0.027267204825934664
 strongiloidiasis 0.010519754948277261
 skistosomiasis 0.010285454254711428
 askariasis 0.006120584697179483
+skor IR100
 
 hiv-aids --- hiv-aids
 hiv-aids 0.2961989228947681
@@ -484,6 +552,7 @@ lupus-eritematosus-sistemik 0.2415523214105004
 filariasis 0.13942413934228062
 varisela 0.1075092386803226
 limfadenitis 0.047138138770868594
+skor IR100
 
 askariasis --- hiv-aids
 askariasis 0.8434362001217562
@@ -491,6 +560,7 @@ keracunan-makanan 0.10517432039242003
 gastroenteritis 0.009640979369305164
 tuberkulosis 0.00748153601850839
 peritonitis 0.0054215366399010725
+skor IR0
 
 lupus-eritematosus-sistemik --- lupus-eritematosus-sistemik
 lupus-eritematosus-sistemik 0.9786715560787769
@@ -498,6 +568,7 @@ anemia 0.006944891856466263
 epistaksis 0.0028253829461835885
 varisela 0.0018856433646647708
 lepra 0.0015663923053641819
+skor IR100
 
 lupus-eritematosus-sistemik --- lupus-eritematosus-sistemik
 lupus-eritematosus-sistemik 0.9130109034608631
@@ -505,6 +576,7 @@ hiv-aids 0.05140322272666631
 varisela 0.016125381351661555
 filariasis 0.005152795222354076
 epistaksis 0.002706112074239766
+skor IR100
 
 lupus-eritematosus-sistemik --- lupus-eritematosus-sistemik
 lupus-eritematosus-sistemik 0.606627036871528
@@ -512,6 +584,7 @@ tuberkulosis 0.2046095943562939
 hiv-aids 0.07762175718454777
 epistaksis 0.01798007825334477
 cardiorespiratory-arrest 0.017407800644844096
+skor IR100
 
 limfadenitis --- limfadenitis
 limfadenitis 0.7196292583854872
@@ -519,6 +592,7 @@ filariasis 0.11727291618133877
 sinusitis 0.09658084307686748
 influenza 0.012715860806651932
 epistaksis 0.011923560873687343
+skor IR100
 
 peritonitis --- limfadenitis
 peritonitis 0.5520754910723803
@@ -526,6 +600,7 @@ keracunan-makanan 0.281627962728379
 askariasis 0.04599108223148435
 apendisitis 0.03983635103219092
 gastroenteritis 0.034076983490133876
+skor IR0
 
 limfadenitis --- limfadenitis
 limfadenitis 0.37458988586539493
@@ -533,6 +608,7 @@ epistaksis 0.17068128415472833
 filariasis 0.11191450911040192
 lepra 0.0946257039353814
 presbiopia 0.0691259200826649
+skor IR100
 
 epistaksis --- asam-lambung
 epistaksis 0.23876503200538446
@@ -540,6 +616,7 @@ lepra 0.13237133374378518
 presbiopia 0.09669983796218061
 gastritis 0.09116483040205607
 hemoroid 0.08667170661795455
+skor IR0
 
 asam-lambung --- asam-lambung
 asam-lambung 0.957993429444013
@@ -547,6 +624,7 @@ gastritis 0.013859858643576646
 laringitis 0.007917301069785257
 infark-miokard 0.006424256315077439
 apendisitis 0.0033263660744583864
+skor IR100
 
 asam-lambung --- asam-lambung
 asam-lambung 0.9525520477574351
@@ -554,6 +632,7 @@ laringitis 0.03865876817197402
 infark-miokard 0.0022813452428512653
 epistaksis 0.0012890517385385882
 faringitis 0.0006068861272342193
+skor IR100
 
 anemia --- hipertensi
 anemia 0.6932996174658687
@@ -561,6 +640,7 @@ hipertensi 0.05006411625689408
 pneumotoraks 0.04773944596974847
 gagal-jantung 0.046136719509852354
 epistaksis 0.028205434386423714
+skor IR80
 
 anemia --- hipertensi
 anemia 0.6568109329119691
@@ -568,6 +648,7 @@ hipertensi 0.1992027168600528
 takikardia 0.041737712104010824
 epistaksis 0.026720969124790047
 cardiorespiratory-arrest 0.022310704288325812
+skor IR80
 
 anemia --- hipertensi
 anemia 0.6568109329119691
@@ -575,6 +656,7 @@ hipertensi 0.1992027168600528
 takikardia 0.041737712104010824
 epistaksis 0.026720969124790047
 cardiorespiratory-arrest 0.022310704288325812
+skor IR80
 
 cardiorespiratory-arrest --- cardiorespiratory-arrest
 cardiorespiratory-arrest 0.5945907089193517
@@ -582,6 +664,7 @@ takikardia 0.11351277170278495
 angina-pektoris-stabil 0.10295943011590541
 infark-miokard 0.1002520070850585
 anemia 0.06075879217276272
+skor IR100
 
 epistaksis --- cardiorespiratory-arrest
 epistaksis 0.3355642848690794
@@ -589,6 +672,7 @@ lepra 0.1860368395314177
 presbiopia 0.13590353537197702
 hemoroid 0.12180983540747582
 retinopati-diabetik 0.039865037042446615
+skor IR0
 
 cardiorespiratory-arrest --- cardiorespiratory-arrest
 cardiorespiratory-arrest 0.5582214045254774
@@ -596,6 +680,7 @@ epistaksis 0.13371354594957555
 anemia 0.07469833084676378
 takikardia 0.05210066442237782
 hemoroid 0.04853801717969583
+skor IR100
 
 gagal-jantung --- gagal-jantung
 gagal-jantung 0.9914166337713
@@ -603,6 +688,7 @@ ppok-penyakit-paru-obstruktif-kronis 0.0044893783189545134
 askariasis 0.001475247623177249
 anemia 0.0010364029473861282
 varisela 0.00030149903923960066
+skor IR100
 
 gagal-jantung --- gagal-jantung
 gagal-jantung 0.9902758134727685
@@ -610,6 +696,7 @@ ppok-penyakit-paru-obstruktif-kronis 0.0030574175482509366
 pneumonia 0.0021160759868017404
 anemia 0.001552815542196857
 bronkopneumonia 0.0006452269515895117
+skor IR100
 
 ppok-penyakit-paru-obstruktif-kronis --- gagal-jantung
 ppok-penyakit-paru-obstruktif-kronis 0.734406554651936
@@ -617,6 +704,7 @@ gagal-jantung 0.24370165627624188
 tuberkulosis 0.010360940004990256
 bronkopneumonia 0.0029110940962246436
 askariasis 0.002238703108221106
+skor IR80
 
 takikardia --- takikardia
 takikardia 0.6964304210995095
@@ -624,6 +712,7 @@ hipertensi 0.21583587430769946
 cardiorespiratory-arrest 0.06331185646359187
 infark-miokard 0.010437588443498668
 anemia 0.00847206854180089
+skor IR100
 
 gastritis --- gastritis
 gastritis 0.6175099305216496
@@ -631,6 +720,7 @@ apendisitis 0.20748333665527394
 kolesistitis 0.07716322437592843
 askariasis 0.02222074119769613
 peritonitis 0.0169741773037956
+skor IR100
 
 gastritis --- gastritis
 gastritis 0.6140894369724186
@@ -638,6 +728,7 @@ apendisitis 0.2888676711518255
 askariasis 0.03093671937477364
 taeniasis 0.019566992352066336
 kolesistitis 0.015347160804996625
+skor IR100
 
 cardiorespiratory-arrest --- takikardia
 cardiorespiratory-arrest 0.42267250752197544
@@ -645,6 +736,7 @@ infark-miokard 0.29931483901289796
 gastritis 0.16235991558780705
 anemia 0.03599264538394647
 keracunan-makanan 0.015211016550315462
+skor IR0
 
 gastritis --- gastritis
 gastritis 0.6175099305216496
@@ -652,6 +744,7 @@ apendisitis 0.20748333665527394
 kolesistitis 0.07716322437592843
 askariasis 0.02222074119769613
 peritonitis 0.0169741773037956
+skor IR100
 
 hipertensi --- takikardia
 hipertensi 0.6712541090550435
@@ -659,6 +752,7 @@ takikardia 0.19690120532281216
 cardiorespiratory-arrest 0.0895005478740056
 anemia 0.02634831136909352
 infark-miokard 0.008853032620015423
+skor IR80
 
 infark-miokard --- infark-miokard
 infark-miokard 0.5743077000719866
@@ -666,6 +760,7 @@ gastritis 0.22757628801998186
 kolesistitis 0.062066260369085705
 angina-pektoris-stabil 0.039170292043600244
 asam-lambung 0.029301413268978928
+skor IR100
 
 malaria --- gastroenteritis
 malaria 0.8660883658296024
@@ -673,6 +768,7 @@ keracunan-makanan 0.10207470025848939
 leptospirosis 0.016127848736599445
 gastroenteritis 0.008892747886519588
 disentri 0.0017924409950152845
+skor IR40
 
 keracunan-makanan --- gastroenteritis
 keracunan-makanan 0.3889142913977325
@@ -680,6 +776,7 @@ apendisitis 0.2310505304606159
 taeniasis 0.14461191467566215
 gastritis 0.08751914032599092
 peritonitis 0.037048322807308534
+skor IR0
 
 apendisitis --- gastroenteritis
 apendisitis 0.36829441402500884
@@ -687,6 +784,7 @@ peritonitis 0.3314311531170869
 keracunan-makanan 0.12076542060239609
 askariasis 0.07730837078988972
 gastroenteritis 0.0438378476786697
+skor IR20
 
 disentri --- disentri
 disentri 0.5616387742146659
@@ -694,6 +792,7 @@ gastroenteritis 0.2878543769186465
 peritonitis 0.08479055373959735
 skistosomiasis 0.019662847470408543
 askariasis 0.014127087300746119
+skor IR100
 
 disentri --- disentri
 disentri 0.4548395054101051
@@ -701,6 +800,7 @@ gastroenteritis 0.39163654893002814
 apendisitis 0.07630453873521115
 peritonitis 0.053834989165323414
 keracunan-makanan 0.008916434417731683
+skor IR100
 
 disentri --- disentri
 disentri 0.3615352606276373
@@ -708,6 +808,7 @@ gastroenteritis 0.31129754584765273
 apendisitis 0.12130336512362792
 keracunan-makanan 0.05568629849516171
 gastritis 0.045948244365010604
+skor IR100
 
 epistaksis --- hemoroid
 epistaksis 0.3355642848690794
@@ -715,6 +816,7 @@ lepra 0.1860368395314177
 presbiopia 0.13590353537197702
 hemoroid 0.12180983540747582
 retinopati-diabetik 0.039865037042446615
+skor IR40
 
 infark-miokard --- infark-miokard
 infark-miokard 0.6427671306233527
@@ -722,6 +824,7 @@ angina-pektoris-stabil 0.14145553089611174
 cardiorespiratory-arrest 0.0803724607364274
 gastritis 0.06792110808900646
 kolesistitis 0.01852393856972896
+skor IR100
 
 epistaksis --- hemoroid
 epistaksis 0.3355642848690794
@@ -729,6 +832,7 @@ lepra 0.1860368395314177
 presbiopia 0.13590353537197702
 hemoroid 0.12180983540747582
 retinopati-diabetik 0.039865037042446615
+skor IR40
 
 hemoroid --- hemoroid
 hemoroid 0.8152915999406456
@@ -736,6 +840,7 @@ epistaksis 0.06806007178734824
 lepra 0.03773250379890588
 presbiopia 0.02756432907387601
 retinopati-diabetik 0.008085536528336967
+skor IR100
 
 infark-miokard --- infark-miokard
 infark-miokard 0.7378700130400798
@@ -743,6 +848,7 @@ angina-pektoris-stabil 0.24357762583242737
 cardiorespiratory-arrest 0.008807042256337756
 takikardia 0.005425138029904053
 hipertensi 0.0026421126769013274
+skor IR100
 
 anemia --- angina-pektoris-stabil
 anemia 0.26984572156496645
@@ -750,6 +856,7 @@ cardiorespiratory-arrest 0.1964181709234993
 infark-miokard 0.13600224366874256
 gastritis 0.055329647724693565
 hemoroid 0.05260268651540508
+skor IR0
 
 hepatitis-b --- hepatitis-a
 hepatitis-b 0.5191063581840226
@@ -757,6 +864,7 @@ hepatitis-a 0.220596424567358
 gastritis 0.14723790392575664
 apendisitis 0.03148214091212532
 taeniasis 0.02580327101601694
+skor IR80
 
 hepatitis-a --- hepatitis-a
 hepatitis-a 0.2612452109560359
@@ -764,6 +872,7 @@ hepatitis-b 0.24590434830188346
 taeniasis 0.18334787591836413
 keracunan-makanan 0.1372234086506047
 apendisitis 0.053261830383348543
+skor IR100
 
 hepatitis-b --- hepatitis-a
 hepatitis-b 0.5508214617487283
@@ -771,6 +880,7 @@ hepatitis-a 0.4096293090266977
 kolesistitis 0.02091721091468995
 peritonitis 0.0074696702582812404
 keracunan-makanan 0.003912084245374478
+skor IR80
 
 angina-pektoris-stabil --- angina-pektoris-stabil
 angina-pektoris-stabil 0.421895747099743
@@ -778,6 +888,7 @@ infark-miokard 0.25560986510986683
 pneumotoraks 0.18334234935692567
 cardiorespiratory-arrest 0.036915877871227465
 epistaksis 0.02813568419260851
+skor IR100
 
 infark-miokard --- angina-pektoris-stabil
 infark-miokard 0.6281020559386054
@@ -785,6 +896,7 @@ angina-pektoris-stabil 0.3702539666836229
 cardiorespiratory-arrest 0.0010709825482584083
 takikardia 0.0001499375567561774
 anemia 0.00013375917548281933
+skor IR80
 
 hepatitis-b --- hepatitis-b
 hepatitis-b 0.3568523603908213
@@ -792,6 +904,7 @@ kolesistitis 0.34781712930367
 hepatitis-a 0.14861298939682135
 apendisitis 0.07574684149279906
 peritonitis 0.03477816413810789
+skor IR100
 
 hepatitis-a --- hepatitis-b
 hepatitis-a 0.49466869078430525
@@ -799,6 +912,7 @@ hepatitis-b 0.2217241502132369
 kolesistitis 0.2104970093288754
 peritonitis 0.04630461709142477
 keracunan-makanan 0.006613930617156208
+skor IR80
 
 hepatitis-b --- hepatitis-b
 hepatitis-b 0.7400780452891565
@@ -806,6 +920,7 @@ gastritis 0.11900892827138575
 apendisitis 0.03998699989918562
 hepatitis-a 0.02547184170097417
 leptospirosis 0.01754570003637729
+skor IR100
 
 kolesistitis --- kolesistitis
 kolesistitis 0.8530348199605082
@@ -813,6 +928,7 @@ apendisitis 0.056868987997367185
 peritonitis 0.05117686706833754
 gastritis 0.015386630951668607
 askariasis 0.008526658182625484
+skor IR100
 
 kolesistitis --- kolesistitis
 kolesistitis 0.9321985077022104
@@ -820,6 +936,7 @@ peritonitis 0.0391483425946564
 apendisitis 0.00790956309565512
 hepatitis-b 0.007904249500217394
 keracunan-makanan 0.003994116075578598
+skor IR100
 
 gastritis --- kolesistitis
 gastritis 0.5019480293732064
@@ -827,6 +944,7 @@ kolesistitis 0.22998346073099607
 apendisitis 0.16865453786939735
 keracunan-makanan 0.024333141062529567
 askariasis 0.018062312367953946
+skor IR80
 
 peritonitis --- apendisitis
 peritonitis 0.49955008309392157
@@ -834,6 +952,7 @@ askariasis 0.23304630653293948
 taeniasis 0.08614177776290792
 disentri 0.07861234829918724
 gastroenteritis 0.03083484090376813
+skor IR0
 
 apendisitis --- apendisitis
 apendisitis 0.37251200690514247
@@ -841,6 +960,7 @@ keracunan-makanan 0.17100774400125016
 gastritis 0.14110303291861467
 taeniasis 0.1059777515311027
 peritonitis 0.05973128498734404
+skor IR100
 
 peritonitis --- apendisitis
 peritonitis 0.38693806170669287
@@ -848,6 +968,7 @@ apendisitis 0.21937502561359357
 keracunan-makanan 0.1409907829412058
 kolesistitis 0.11422005465831736
 gastroenteritis 0.05117965420765761
+skor IR80
 
 kolesistitis --- peritonitis
 kolesistitis 0.6129916523950445
@@ -855,6 +976,7 @@ apendisitis 0.14984240391878845
 peritonitis 0.1348444038938588
 gastritis 0.04054177595205321
 askariasis 0.022466637871902437
+skor IR60
 
 peritonitis --- peritonitis
 peritonitis 0.556738815236225
@@ -862,6 +984,7 @@ keracunan-makanan 0.28400684479259547
 askariasis 0.046379564112240916
 apendisitis 0.04017284453964029
 gastroenteritis 0.03436482821990395
+skor IR100
 
 peritonitis --- peritonitis
 peritonitis 0.38693806170669287
@@ -869,6 +992,7 @@ apendisitis 0.21937502561359357
 keracunan-makanan 0.1409907829412058
 kolesistitis 0.11422005465831736
 gastroenteritis 0.05117965420765761
+skor IR100
 
 serumen-prop --- serumen-prop
 serumen-prop 0.41787530738068274
@@ -876,6 +1000,7 @@ otitis-eksterna 0.3398604523264843
 benda-asing-di-telinga 0.2149564338377999
 otitis-media 0.026971666243750116
 epistaksis 7.402081055020645e-05
+skor IR100
 
 serumen-prop --- serumen-prop
 serumen-prop 0.8317310782068608
@@ -883,6 +1008,7 @@ benda-asing-di-telinga 0.11979665735489792
 otitis-eksterna 0.04392544103012922
 otitis-media 0.003578926161261679
 epistaksis 0.0003241251551809995
+skor IR100
 
 serumen-prop --- serumen-prop
 serumen-prop 0.7897071774981306
@@ -890,6 +1016,7 @@ benda-asing-di-telinga 0.11374383214993676
 otitis-eksterna 0.09175335793428237
 otitis-media 0.0033980979565864516
 epistaksis 0.00030774846360913605
+skor IR100
 
 benda-asing-di-telinga --- benda-asing-di-telinga
 benda-asing-di-telinga 0.5032496183249194
@@ -897,6 +1024,7 @@ serumen-prop 0.3176354733842991
 otitis-eksterna 0.13180347146605018
 otitis-media 0.015034586644035172
 epistaksis 0.014977667212051113
+skor IR100
 
 benda-asing-di-telinga --- benda-asing-di-telinga
 benda-asing-di-telinga 0.43012840202746583
@@ -904,6 +1032,7 @@ serumen-prop 0.2714836407601921
 otitis-eksterna 0.24783588878725446
 otitis-media 0.012850089682864094
 epistaksis 0.012801440536531691
+skor IR100
 
 otitis-eksterna --- benda-asing-di-telinga
 otitis-eksterna 0.4623315520662269
@@ -911,6 +1040,7 @@ benda-asing-di-telinga 0.40938449120386033
 serumen-prop 0.07234940462730036
 otitis-media 0.051367533713597875
 epistaksis 0.0015506988303176502
+skor IR80
 
 strongiloidiasis --- askariasis
 strongiloidiasis 0.2877659252105342
@@ -918,6 +1048,7 @@ morbili 0.10123588639646869
 skistosomiasis 0.09886317030905134
 epistaksis 0.0886242876706978
 tuberkulosis 0.07640349812026175
+skor IR0
 
 strongiloidiasis --- askariasis
 strongiloidiasis 0.3008369171199325
@@ -925,6 +1056,7 @@ ankilostomiasis 0.2567596705308686
 askariasis 0.23868052928523478
 apendisitis 0.05157204293484549
 keracunan-makanan 0.03720355857214488
+skor IR60
 
 ppok-penyakit-paru-obstruktif-kronis --- askariasis
 ppok-penyakit-paru-obstruktif-kronis 0.7862564481277959
@@ -932,6 +1064,7 @@ epistaksis 0.07148153072162074
 tuberkulosis 0.029051611612339052
 gagal-jantung 0.021259109715303776
 askariasis 0.017576225025465124
+skor IR20
 
 ankilostomiasis --- ankilostomiasis
 ankilostomiasis 0.505898676940496
@@ -939,6 +1072,7 @@ strongiloidiasis 0.45363134010537226
 taeniasis 0.0090855272593395
 alergi-makanan 0.007371426205903909
 apendisitis 0.0065982740378963105
+skor IR100
 
 ankilostomiasis --- ankilostomiasis
 ankilostomiasis 0.3757048618437572
@@ -946,6 +1080,7 @@ apendisitis 0.19250777475611675
 strongiloidiasis 0.15313118446509272
 taeniasis 0.12048843965834788
 gastritis 0.0520854368928888
+skor IR100
 
 ankilostomiasis --- ankilostomiasis
 ankilostomiasis 0.2420046346246225
@@ -953,6 +1088,7 @@ peritonitis 0.19926696718424267
 varisela 0.12217365725120687
 kolesistitis 0.10145535300637779
 askariasis 0.09296051044310864
+skor IR100
 
 skistosomiasis --- skistosomiasis
 skistosomiasis 0.4848001278792685
@@ -960,6 +1096,7 @@ peritonitis 0.28507711878575503
 keracunan-makanan 0.05972128174638414
 askariasis 0.047497146402651444
 leptospirosis 0.02059442149584983
+skor IR100
 
 skistosomiasis --- skistosomiasis
 skistosomiasis 0.7515695185136406
@@ -967,6 +1104,7 @@ disentri 0.19515835349814378
 strongiloidiasis 0.030132653070064803
 gastroenteritis 0.010825075369538027
 leptospirosis 0.005701222656220917
+skor IR100
 
 skistosomiasis --- skistosomiasis
 skistosomiasis 0.9819374781822497
@@ -974,6 +1112,7 @@ strongiloidiasis 0.0063910370831723054
 ankilostomiasis 0.006285836623023105
 disentri 0.004214503792960264
 gastroenteritis 0.0002504686966080636
+skor IR100
 
 taeniasis --- taeniasis
 taeniasis 0.8852062850504435
@@ -981,6 +1120,7 @@ askariasis 0.07934071147489145
 keracunan-makanan 0.019433822254173706
 peritonitis 0.005509771630200786
 gastroenteritis 0.0027434079082141864
+skor IR100
 
 taeniasis --- taeniasis
 taeniasis 0.49154055958386156
@@ -988,6 +1128,7 @@ ankilostomiasis 0.28610639601475235
 askariasis 0.0616792376248192
 apendisitis 0.052356546733823096
 keracunan-makanan 0.02697820843286678
+skor IR100
 
 taeniasis --- taeniasis
 taeniasis 0.8805699714141547
@@ -995,6 +1136,7 @@ askariasis 0.07892516040082409
 keracunan-makanan 0.009666018303208459
 apendisitis 0.00852673607901762
 strongiloidiasis 0.004521753981297222
+skor IR100
 
 strongiloidiasis --- strongiloidiasis
 strongiloidiasis 0.8908332709644847
@@ -1002,6 +1144,7 @@ askariasis 0.0659658356019981
 peritonitis 0.009161921611388594
 ankilostomiasis 0.0072410710677693795
 skistosomiasis 0.006543893564137049
+skor IR100
 
 strongiloidiasis --- strongiloidiasis
 strongiloidiasis 0.9043191871232014
@@ -1009,6 +1152,7 @@ ppok-penyakit-paru-obstruktif-kronis 0.04962222263770316
 askariasis 0.012201979249427565
 epistaksis 0.009924954343937167
 alergi-makanan 0.004618435230564463
+skor IR100
 
 strongiloidiasis --- strongiloidiasis
 strongiloidiasis 0.6788320548739614
@@ -1016,6 +1160,7 @@ ankilostomiasis 0.30348093430605966
 skistosomiasis 0.011872791730659943
 alergi-makanan 0.0038913658493539326
 taeniasis 0.0006894421285965536
+skor IR100
 
 trikiasis --- mata-kering
 trikiasis 0.20879627094081488
@@ -1023,6 +1168,7 @@ konjungtivitis 0.1841142378096258
 perdarahan-subkonjungtiva 0.15790217989899136
 episkleritis 0.15100444594826828
 hifema 0.10065935926898778
+skor IR0
 
 glaukoma --- mata-kering
 glaukoma 0.3410553852417272
@@ -1030,6 +1176,7 @@ hifema 0.254738898853389
 trikiasis 0.12329362704504036
 retinopati-diabetik 0.09687356410681724
 episkleritis 0.0832231982554023
+skor IR0
 
 hipermetropia --- mata-kering
 hipermetropia 0.36505399186049936
@@ -1037,6 +1184,7 @@ trikiasis 0.15929628735730914
 mata-kering 0.10579003735358485
 hifema 0.07679573081963932
 katarak 0.060842331976749923
+skor IR60
 
 buta-senja --- buta-senja
 buta-senja 0.8784426476130981
@@ -1044,6 +1192,7 @@ lepra 0.05197397332797253
 retinopati-diabetik 0.022274559997702496
 epistaksis 0.017045117843359738
 katarak 0.007218607406662841
+skor IR100
 
 buta-senja --- buta-senja
 buta-senja 0.7438523204458574
@@ -1051,6 +1200,7 @@ retinopati-diabetik 0.18861769958713542
 katarak 0.01711530977735113
 presbiopia 0.01636765161706543
 astigmatisme 0.008082790922007648
+skor IR100
 
 buta-senja --- buta-senja
 buta-senja 0.8784426476130981
@@ -1058,6 +1208,7 @@ lepra 0.05197397332797253
 retinopati-diabetik 0.022274559997702496
 epistaksis 0.017045117843359738
 katarak 0.007218607406662841
+skor IR100
 
 perdarahan-subkonjungtiva --- hordeolum-bintitan
 perdarahan-subkonjungtiva 0.4454425763530169
@@ -1065,6 +1216,7 @@ konjungtivitis 0.23608494508105757
 mata-kering 0.14935578868223717
 blefaritis 0.06258718763827058
 episkleritis 0.05421615129165199
+skor IR0
 
 epistaksis --- hordeolum-bintitan
 epistaksis 0.27327521853002434
@@ -1072,6 +1224,7 @@ lepra 0.15150378115304555
 presbiopia 0.11067646350465975
 hordeolum-bintitan 0.11063987624399725
 hemoroid 0.09919890432639884
+skor IR40
 
 hordeolum-bintitan --- hordeolum-bintitan
 hordeolum-bintitan 0.8348899919721092
@@ -1079,6 +1232,7 @@ blefaritis 0.07421244373085417
 konjungtivitis 0.04399002758056516
 hifema 0.014724691216439338
 episkleritis 0.007653158259744349
+skor IR100
 
 mata-kering --- konjungtivitis
 mata-kering 0.6275238907780711
@@ -1086,6 +1240,7 @@ konjungtivitis 0.27052354393341366
 episkleritis 0.03451381399279384
 blefaritis 0.0325986436767828
 hordeolum-bintitan 0.02222634796144282
+skor IR80
 
 hordeolum-bintitan --- konjungtivitis
 hordeolum-bintitan 0.5618227523751026
@@ -1093,6 +1248,7 @@ blefaritis 0.3845364616256256
 konjungtivitis 0.03453592494621896
 episkleritis 0.01081508798322073
 trikiasis 0.003814845849460578
+skor IR60
 
 konjungtivitis --- konjungtivitis
 konjungtivitis 0.3302599551991752
@@ -1100,6 +1256,7 @@ blefaritis 0.29184469709071287
 hordeolum-bintitan 0.2507211261370217
 episkleritis 0.09028945316243954
 trikiasis 0.02432039142422608
+skor IR100
 
 hordeolum-bintitan --- blefaritis
 hordeolum-bintitan 0.5923011940487126
@@ -1107,6 +1264,7 @@ konjungtivitis 0.15604059284899743
 blefaritis 0.13789022506954132
 episkleritis 0.059723703733245204
 perdarahan-subkonjungtiva 0.044608445381004086
+skor IR60
 
 blefaritis --- blefaritis
 blefaritis 0.7016667894012435
@@ -1114,6 +1272,7 @@ hordeolum-bintitan 0.20503250339646753
 konjungtivitis 0.06301798137313722
 episkleritis 0.01409598460850715
 trikiasis 0.013921960107167532
+skor IR100
 
 blefaritis --- blefaritis
 blefaritis 0.7016667894012435
@@ -1121,6 +1280,7 @@ hordeolum-bintitan 0.20503250339646753
 konjungtivitis 0.06301798137313722
 episkleritis 0.01409598460850715
 trikiasis 0.013921960107167532
+skor IR100
 
 perdarahan-subkonjungtiva --- perdarahan-subkonjungtiva
 perdarahan-subkonjungtiva 0.4176820495788145
@@ -1128,6 +1288,7 @@ episkleritis 0.21351680430760764
 trikiasis 0.10544039718894205
 epistaksis 0.06339610220595351
 glaukoma 0.03888929341030579
+skor IR100
 
 perdarahan-subkonjungtiva --- perdarahan-subkonjungtiva
 perdarahan-subkonjungtiva 0.805136736944104
@@ -1135,6 +1296,7 @@ episkleritis 0.09799560584894439
 konjungtivitis 0.03879301424836289
 trikiasis 0.013198061393797214
 epistaksis 0.007935342348362911
+skor IR100
 
 perdarahan-subkonjungtiva --- perdarahan-subkonjungtiva
 perdarahan-subkonjungtiva 0.4176820495788145
@@ -1142,6 +1304,7 @@ episkleritis 0.21351680430760764
 trikiasis 0.10544039718894205
 epistaksis 0.06339610220595351
 glaukoma 0.03888929341030579
+skor IR100
 
 astigmatisme --- astigmatisme
 astigmatisme 0.8023396386340905
@@ -1149,6 +1312,7 @@ miopia-ringan 0.07564916592835703
 hipermetropia 0.07221056747706804
 retinopati-diabetik 0.022105275758286136
 buta-senja 0.015850301432608134
+skor IR100
 
 astigmatisme --- astigmatisme
 astigmatisme 0.43489431733019873
@@ -1156,6 +1320,7 @@ hipermetropia 0.2152726870784484
 retinopati-diabetik 0.09225972303362068
 presbiopia 0.08806609925936498
 hipertensi 0.06315784729344553
+skor IR100
 
 astigmatisme --- astigmatisme
 astigmatisme 0.5399546288055601
@@ -1163,6 +1328,7 @@ hipermetropia 0.2672775412587523
 miopia-ringan 0.17818502750583468
 presbiopia 0.01214897914812508
 retinopati-diabetik 0.0009466736998539017
+skor IR100
 
 astigmatisme --- hipermetropia
 astigmatisme 0.5513506276213793
@@ -1170,6 +1336,7 @@ hipermetropia 0.27291856067258236
 miopia-ringan 0.1299612193678963
 presbiopia 0.026582976688887847
 retinopati-diabetik 0.007595136196825112
+skor IR80
 
 miopia-ringan --- hipermetropia
 miopia-ringan 0.5847004695918212
@@ -1177,6 +1344,7 @@ hipermetropia 0.24557419722856472
 presbiopia 0.08770507043877303
 astigmatisme 0.07087278419294794
 retinopati-diabetik 0.0068341613328914115
+skor IR80
 
 miopia-ringan --- hipermetropia
 miopia-ringan 0.5847004695918212
@@ -1184,6 +1352,7 @@ hipermetropia 0.24557419722856472
 presbiopia 0.08770507043877303
 astigmatisme 0.07087278419294794
 retinopati-diabetik 0.0068341613328914115
+skor IR80
 
 astigmatisme --- miopia-ringan
 astigmatisme 0.5513506276213793
@@ -1191,6 +1360,7 @@ hipermetropia 0.27291856067258236
 miopia-ringan 0.1299612193678963
 presbiopia 0.026582976688887847
 retinopati-diabetik 0.007595136196825112
+skor IR60
 
 retinopati-diabetik --- miopia-ringan
 retinopati-diabetik 0.3216036071598657
@@ -1198,6 +1368,7 @@ presbiopia 0.30698526137987103
 hipermetropia 0.09550652576262675
 epistaksis 0.049220019461258875
 miopia-ringan 0.04547929798220312
+skor IR20
 
 miopia-ringan --- miopia-ringan
 miopia-ringan 0.41367286902927636
@@ -1205,6 +1376,7 @@ hipermetropia 0.24323964698921452
 presbiopia 0.18615279106317392
 astigmatisme 0.0701990323201196
 retinopati-diabetik 0.0531865117323355
+skor IR100
 
 astigmatisme --- presbiopia
 astigmatisme 0.5399773211911628
@@ -1212,6 +1384,7 @@ hipermetropia 0.26728877398962564
 miopia-ringan 0.17819251599308358
 presbiopia 0.012149489726801141
 retinopati-diabetik 0.0009467134852052848
+skor IR40
 
 astigmatisme --- presbiopia
 astigmatisme 0.5513506276213793
@@ -1219,6 +1392,7 @@ hipermetropia 0.27291856067258236
 miopia-ringan 0.1299612193678963
 presbiopia 0.026582976688887847
 retinopati-diabetik 0.007595136196825112
+skor IR40
 
 retinopati-diabetik --- presbiopia
 retinopati-diabetik 0.3216036071598657
@@ -1226,6 +1400,7 @@ presbiopia 0.30698526137987103
 hipermetropia 0.09550652576262675
 epistaksis 0.049220019461258875
 miopia-ringan 0.04547929798220312
+skor IR80
 
 retinopati-diabetik --- katarak
 retinopati-diabetik 0.3216036071598657
@@ -1233,6 +1408,7 @@ presbiopia 0.30698526137987103
 hipermetropia 0.09550652576262675
 epistaksis 0.049220019461258875
 miopia-ringan 0.04547929798220312
+skor IR0
 
 epistaksis --- katarak
 epistaksis 0.3355642848690794
@@ -1240,6 +1416,7 @@ lepra 0.1860368395314177
 presbiopia 0.13590353537197702
 hemoroid 0.12180983540747582
 retinopati-diabetik 0.039865037042446615
+skor IR0
 
 epistaksis --- katarak
 epistaksis 0.3355642848690794
@@ -1247,6 +1424,7 @@ lepra 0.1860368395314177
 presbiopia 0.13590353537197702
 hemoroid 0.12180983540747582
 retinopati-diabetik 0.039865037042446615
+skor IR0
 
 glaukoma --- glaukoma
 glaukoma 0.8739742859588367
@@ -1254,6 +1432,7 @@ perdarahan-subkonjungtiva 0.03620227179216991
 hifema 0.029671966498602497
 trikiasis 0.027416897044708663
 episkleritis 0.01850640550517839
+skor IR100
 
 hifema --- glaukoma
 hifema 0.36169795129628773
@@ -1261,6 +1440,7 @@ retinopati-diabetik 0.3438714094109706
 presbiopia 0.0895202429458309
 glaukoma 0.08070946020660964
 hipermetropia 0.02785074224981417
+skor IR40
 
 gastritis --- glaukoma
 gastritis 0.47696237469478836
@@ -1268,6 +1448,7 @@ glaukoma 0.18245077851370875
 apendisitis 0.11447096992674934
 perdarahan-subkonjungtiva 0.06801824150558165
 episkleritis 0.034770557115250046
+skor IR80
 
 hifema --- trikiasis
 hifema 0.5420075079173167
@@ -1275,6 +1456,7 @@ katarak 0.1574510302265362
 trikiasis 0.1573989802991886
 glaukoma 0.048377529632289445
 epistaksis 0.021508234441163322
+skor IR60
 
 epistaksis --- trikiasis
 epistaksis 0.27327521853002434
@@ -1282,6 +1464,7 @@ lepra 0.15150378115304555
 presbiopia 0.11067646350465975
 hordeolum-bintitan 0.11063987624399725
 hemoroid 0.09919890432639884
+skor IR0
 
 trikiasis --- trikiasis
 trikiasis 0.6184774731877679
@@ -1289,6 +1472,7 @@ episkleritis 0.20873614720087214
 hifema 0.05963281421920636
 glaukoma 0.05322598293945692
 konjungtivitis 0.038561273461557716
+skor IR100
 
 episkleritis --- episkleritis
 episkleritis 0.4220754100664308
@@ -1296,6 +1480,7 @@ trikiasis 0.4168646025347458
 konjungtivitis 0.07797291234521155
 hordeolum-bintitan 0.02367765886673685
 blefaritis 0.019292907224748548
+skor IR100
 
 trikiasis --- episkleritis
 trikiasis 0.6184774731877679
@@ -1303,6 +1488,7 @@ episkleritis 0.20873614720087214
 hifema 0.05963281421920636
 glaukoma 0.05322598293945692
 konjungtivitis 0.038561273461557716
+skor IR80
 
 glaukoma --- episkleritis
 glaukoma 0.32977536334496127
@@ -1310,6 +1496,7 @@ perdarahan-subkonjungtiva 0.23612540039279803
 trikiasis 0.17882374424939187
 episkleritis 0.12070602736833959
 hifema 0.08796917761186149
+skor IR40
 
 hordeolum-bintitan --- hifema
 hordeolum-bintitan 0.2187916690392651
@@ -1317,6 +1504,7 @@ retinopati-diabetik 0.19260033828787193
 hifema 0.12380187034114812
 perdarahan-subkonjungtiva 0.08827515504860785
 presbiopia 0.08356626248027473
+skor IR60
 
 hifema --- hifema
 hifema 0.36169795129628773
@@ -1324,6 +1512,7 @@ retinopati-diabetik 0.3438714094109706
 presbiopia 0.0895202429458309
 glaukoma 0.08070946020660964
 hipermetropia 0.02785074224981417
+skor IR100
 
 trikiasis --- hifema
 trikiasis 0.28877180380883527
@@ -1331,6 +1520,7 @@ episkleritis 0.2728893545993497
 glaukoma 0.24851613468966102
 hordeolum-bintitan 0.05467354963172541
 perdarahan-subkonjungtiva 0.0485297059178737
+skor IR0
 
 retinopati-diabetik --- retinopati-diabetik
 retinopati-diabetik 0.49062580636865033
@@ -1338,6 +1528,7 @@ buta-senja 0.35179687449248415
 katarak 0.044519749096414526
 presbiopia 0.04257496666835384
 astigmatisme 0.021024674897952556
+skor IR100
 
 retinopati-diabetik --- retinopati-diabetik
 retinopati-diabetik 0.3216036071598657
@@ -1345,6 +1536,7 @@ presbiopia 0.30698526137987103
 hipermetropia 0.09550652576262675
 epistaksis 0.049220019461258875
 miopia-ringan 0.04547929798220312
+skor IR100
 
 retinopati-diabetik --- retinopati-diabetik
 retinopati-diabetik 0.3216036071598657
@@ -1352,6 +1544,7 @@ presbiopia 0.30698526137987103
 hipermetropia 0.09550652576262675
 epistaksis 0.049220019461258875
 miopia-ringan 0.04547929798220312
+skor IR100
 
 benda-asing-di-telinga --- otitis-eksterna
 benda-asing-di-telinga 0.19161469847979637
@@ -1359,6 +1552,7 @@ epistaksis 0.1756468069398131
 serumen-prop 0.1655550994865436
 otitis-eksterna 0.12118224504391596
 lepra 0.09737858976743241
+skor IR40
 
 otitis-media --- otitis-eksterna
 otitis-media 0.4669338652588075
@@ -1366,6 +1560,7 @@ otitis-eksterna 0.4202620663881311
 benda-asing-di-telinga 0.06766052372890381
 serumen-prop 0.04384401937632959
 epistaksis 0.0005638376977408637
+skor IR80
 
 benda-asing-di-telinga --- otitis-eksterna
 benda-asing-di-telinga 0.5441308843932703
@@ -1373,6 +1568,7 @@ otitis-eksterna 0.24580205817658632
 serumen-prop 0.06410851147033415
 epistaksis 0.045344240366105716
 lepra 0.025138846858969017
+skor IR80
 
 otitis-media --- otitis-media
 otitis-media 0.831424216813927
@@ -1380,6 +1576,7 @@ otitis-eksterna 0.13333705991084466
 serumen-prop 0.0198720652315032
 benda-asing-di-telinga 0.015333383666283357
 epistaksis 1.1616199747184312e-05
+skor IR100
 
 otitis-media --- otitis-media
 otitis-media 0.4669338652588075
@@ -1387,6 +1584,7 @@ otitis-eksterna 0.4202620663881311
 benda-asing-di-telinga 0.06766052372890381
 serumen-prop 0.04384401937632959
 epistaksis 0.0005638376977408637
+skor IR100
 
 serumen-prop --- otitis-media
 serumen-prop 0.17284107368364
@@ -1394,4 +1592,7 @@ epistaksis 0.16137168144846015
 varisela 0.12238463300375123
 askariasis 0.08710301307399589
 otitis-media 0.07362951824088954
+skor IR20
 
+item found 176/199
+item found skor 76.68341708542714

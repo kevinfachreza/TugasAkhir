@@ -22,6 +22,7 @@ from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 import pickle
+from sklearn.naive_bayes import BernoulliNB
 
 from flask_cors import CORS
 
@@ -43,18 +44,24 @@ def predict():
 	total_attributes=376
 
 	#init labels
-	label = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/NN/label-23Apr.csv")
+	label = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/dataset/label.csv")
 	label = label.values
+
+	#init attributes
+	attributes = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/dataset/attributes-t5.csv")
+	attributes = attributes.values
+
 	
 	#RECEIVE DATA FROM REQUEST
 	data = request.json
 	data_gejala = data.get("gejala")
 
 	#PROCESS DATA INTO ARRAY BIAR SESUAI FORMAT DARI PERMINTAAN PREDICT
+	number = str(5)
 	gejala_array = []
-	for i in range(total_attributes):	
-		number = str(i)
-		if(data_gejala.get(number)):
+	for i in attributes:	
+		number = str(i[0])
+		if(data_gejala.get(str(number))):
 			value_gejala = data_gejala.get(number)
 		else:
 			value_gejala = 0
@@ -74,11 +81,37 @@ def predict():
 	#print (gejala_array_np)
 
 	#LOAD MODEL
-	filename = '../Users/Kevin/PycharmProjects/TugasAkhir/NaiveBayes/model_architecture.sav'
-	
-	loaded_model = pickle.load(open(filename, 'rb'))
+	# fix random seed for reproducibility
+	seed = 7
+	numpy.random.seed(seed)
 
-	predictions = loaded_model.predict_proba(gejala_array_np)
+	#assigning predictor and target variables
+	dataframe = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/dataset/classifier-training-t5.csv", skipinitialspace=True)
+	dataset = dataframe.values
+	jumlah_gejala = len(dataset[0]) - 1
+
+	X_train = dataset[:,0:jumlah_gejala]
+	Y_train = dataset[:,jumlah_gejala]
+
+	#assigning testing
+	dataframe = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/dataset/classifier-testing-t5.csv", skipinitialspace=True)
+	dataset = dataframe.values
+	X_test = dataset[:,0:jumlah_gejala]
+	Y_test = dataset[:,jumlah_gejala]
+
+	#label
+	label = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/dataset/label.csv")
+	label = label.values
+
+	#Create a Gaussian Classifier
+	model = BernoulliNB()
+
+	# Train the model using the training sets 
+	y_pred = model.fit(X_train, Y_train).predict(X_test)
+	class_map = model.classes_
+	score = model.score(X_test, Y_test)
+
+	predictions = model.predict_proba(gejala_array_np)
 
 	#reverse encoding kalo mau diprint 1 1 tiap baris
 	#karena bingung gimana format list ke json, jadi list dibiarin aja buat debugging, yang json di cetak secara string
@@ -95,7 +128,7 @@ def predict():
     			labels = label[item][0]
     			result.append(HasilDiagnosis(labels,pred[item]))
 
-    			json_item_string = '{"diagnosis":"' + str(labels) +'","probability":"'+ str(pred[item]) +'"}'
+    			json_item_string = '{"diagnosis":"' + str(class_map[item]) +'","probability":"'+ str(pred[item]) +'"}'
     			if index < 4:
     				json_item_string = json_item_string + ','
 
