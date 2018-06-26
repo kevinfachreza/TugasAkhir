@@ -20,7 +20,7 @@ seed = 7
 numpy.random.seed(seed)
 
 #assigning predictor and target variables
-dataframe = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/dataset/classifier-training-t18.csv", skipinitialspace=True)
+dataframe = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/dataset/classifier-training-t5.csv", skipinitialspace=True)
 dataset = dataframe.values
 jumlah_gejala = len(dataset[0]) - 1
 
@@ -28,7 +28,7 @@ X_train = dataset[:,0:jumlah_gejala]
 Y_train = dataset[:,jumlah_gejala]
 
 #assigning testing
-dataframe = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/dataset/classifier-testing-t18.csv", skipinitialspace=True)
+dataframe = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/dataset/classifier-testing-t5.csv", skipinitialspace=True)
 dataset = dataframe.values
 X_test = dataset[:,0:jumlah_gejala]
 Y_test = dataset[:,jumlah_gejala]
@@ -38,7 +38,7 @@ label = pandas.read_csv("../Users/Kevin/PycharmProjects/TugasAkhir/dataset/label
 label = label.values
 
 #Create a Gaussian Classifier
-model = SVC(kernel = 'linear', probability=True).fit(X_train, Y_train)
+model = SVC(kernel = 'rbf', probability=True).fit(X_train, Y_train)
 
 # Train the model using the training sets 
 y_pred = model.fit(X_train, Y_train).predict(X_test)
@@ -62,7 +62,7 @@ predictions = model.predict_proba(X_test)
 
 #print hasil
 index = 0
-filewrite = '../Users/Kevin/PycharmProjects/TugasAkhir/laporan/t18/svm_prediction_result.txt'
+filewrite = '../Users/Kevin/PycharmProjects/TugasAkhir/laporan/t5/svm_prediction_result.txt'
 with open(filewrite, 'w') as result_file:
     result_file.write('jumlah gejala ' + str(jumlah_gejala) + '\n')
     result_file.write('jumlah diagnosis ' + str(len(class_map)) + '\n')
@@ -143,7 +143,7 @@ for i in range(size):
 
 #ambil data fp fn tn tp
 
-filewrite = '../Users/Kevin/PycharmProjects/TugasAkhir/laporan/t18/svm_cm_class.txt'
+filewrite = '../Users/Kevin/PycharmProjects/TugasAkhir/laporan/t5/svm_cm_class.txt'
 with open(filewrite, 'w') as the_file:
     for i in range(size):
         row = cm[i]
@@ -190,7 +190,7 @@ print("CONFUSION MATRIX EACH CLASS DONE")
 #print confusion matrix
 
 
-filewrite = '../Users/Kevin/PycharmProjects/TugasAkhir/laporan/t18/svm_cm_all.csv'
+filewrite = '../Users/Kevin/PycharmProjects/TugasAkhir/laporan/t5/svm_cm_all.csv'
 with open(filewrite, 'w') as new_file:
     #print("," + ",".join(class_map))
     new_file.write("," + ",".join(class_map) + '\n')

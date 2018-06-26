@@ -11,10 +11,10 @@ FN :0
 TN :196
 
 angina-pektoris-stabil
-TP :1
-FP :0
-FN :2
-TN :196
+TP :2
+FP :1
+FN :1
+TN :195
 
 ankilostomiasis
 TP :2
@@ -30,9 +30,9 @@ TN :196
 
 asam-lambung
 TP :3
-FP :1
+FP :0
 FN :0
-TN :195
+TN :196
 
 askariasis
 TP :3
@@ -53,16 +53,16 @@ FN :0
 TN :196
 
 blefaritis
-TP :3
+TP :2
 FP :1
-FN :0
+FN :1
 TN :195
 
 bronkopneumonia
-TP :0
-FP :1
-FN :3
-TN :195
+TP :2
+FP :3
+FN :1
+TN :193
 
 buta-senja
 TP :3
@@ -77,22 +77,22 @@ FN :0
 TN :196
 
 demam-berdarah-dengue
+TP :1
+FP :0
+FN :2
+TN :196
+
+disentri
 TP :2
 FP :0
 FN :1
 TN :196
 
-disentri
+episkleritis
 TP :3
 FP :1
 FN :0
 TN :195
-
-episkleritis
-TP :3
-FP :2
-FN :0
-TN :194
 
 epistaksis
 TP :3
@@ -101,16 +101,16 @@ FN :0
 TN :196
 
 faringitis
-TP :2
-FP :2
-FN :1
-TN :194
+TP :0
+FP :0
+FN :3
+TN :196
 
 filariasis
 TP :3
-FP :1
+FP :0
 FN :0
-TN :195
+TN :196
 
 gagal-jantung
 TP :2
@@ -119,10 +119,10 @@ FN :1
 TN :196
 
 gastritis
-TP :3
-FP :2
-FN :0
-TN :194
+TP :2
+FP :0
+FN :1
+TN :196
 
 gastroenteritis
 TP :0
@@ -132,9 +132,9 @@ TN :196
 
 glaukoma
 TP :3
-FP :1
+FP :0
 FN :0
-TN :195
+TN :196
 
 hemoroid
 TP :3
@@ -167,34 +167,34 @@ FN :1
 TN :196
 
 hipertensi
-TP :0
-FP :0
-FN :3
-TN :196
+TP :2
+FP :1
+FN :1
+TN :195
 
 hiv-aids
-TP :2
+TP :1
 FP :0
-FN :1
+FN :2
 TN :196
 
 hordeolum-bintitan
-TP :3
+TP :2
 FP :1
-FN :0
+FN :1
 TN :195
 
 infark-miokard
-TP :3
+TP :2
 FP :2
-FN :0
+FN :1
 TN :194
 
 influenza
 TP :3
-FP :1
+FP :2
 FN :0
-TN :195
+TN :194
 
 katarak
 TP :1
@@ -204,26 +204,26 @@ TN :196
 
 keracunan-makanan
 TP :2
-FP :4
+FP :5
 FN :1
-TN :192
+TN :191
 
 kolesistitis
 TP :3
-FP :0
+FP :4
 FN :0
-TN :196
+TN :192
 
 konjungtivitis
-TP :1
+TP :2
 FP :1
-FN :2
+FN :1
 TN :195
 
 laringitis
-TP :2
+TP :3
 FP :0
-FN :1
+FN :0
 TN :196
 
 lepra
@@ -233,9 +233,9 @@ FN :1
 TN :195
 
 leptospirosis
-TP :3
+TP :2
 FP :2
-FN :0
+FN :1
 TN :194
 
 limfadenitis
@@ -246,20 +246,20 @@ TN :196
 
 lupus-eritematosus-sistemik
 TP :3
-FP :0
-FN :0
-TN :196
-
-malaria
-TP :3
 FP :1
 FN :0
 TN :195
 
+malaria
+TP :3
+FP :2
+FN :0
+TN :194
+
 mata-kering
-TP :0
+TP :1
 FP :0
-FN :3
+FN :2
 TN :196
 
 miopia-ringan
@@ -275,40 +275,40 @@ FN :0
 TN :196
 
 otitis-eksterna
-TP :3
+TP :2
 FP :1
-FN :0
+FN :1
 TN :195
 
 otitis-media
 TP :2
-FP :0
-FN :1
-TN :196
-
-perdarahan-subkonjungtiva
-TP :2
 FP :1
 FN :1
 TN :195
 
+perdarahan-subkonjungtiva
+TP :3
+FP :5
+FN :0
+TN :191
+
 peritonitis
 TP :3
-FP :2
+FP :3
 FN :0
-TN :194
+TN :193
 
 pneumonia
-TP :2
-FP :3
-FN :1
-TN :193
+TP :0
+FP :0
+FN :3
+TN :196
 
 pneumotoraks
 TP :3
-FP :2
+FP :3
 FN :0
-TN :194
+TN :193
 
 ppok-penyakit-paru-obstruktif-kronis
 TP :2
@@ -347,40 +347,40 @@ FN :0
 TN :196
 
 skistosomiasis
-TP :2
+TP :3
 FP :0
-FN :1
+FN :0
 TN :196
 
 strongiloidiasis
-TP :2
-FP :1
-FN :1
-TN :195
+TP :3
+FP :0
+FN :0
+TN :196
 
 taeniasis
 TP :3
-FP :1
+FP :0
 FN :0
-TN :195
+TN :196
 
 takikardia
-TP :2
-FP :2
-FN :1
-TN :194
+TP :1
+FP :0
+FN :2
+TN :196
 
 tonsilitis
-TP :2
+TP :3
 FP :0
-FN :1
+FN :0
 TN :196
 
 trikiasis
 TP :1
-FP :2
+FP :1
 FN :2
-TN :194
+TN :195
 
 tuberkulosis
 TP :3
