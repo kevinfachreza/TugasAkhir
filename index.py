@@ -25,6 +25,11 @@ from collections import defaultdict, namedtuple
 from itertools import combinations
 import mysql.connector
 
+db_user = 'root'
+db_database = 'aqeela_tugas_akhir'
+url_training = 'C:\\Users\\Kevin\\PycharmProjects\\TugasAkhir\\dataset\\kasus-fptree-training.csv'
+min_support = 23
+
 cnx = mysql.connector.connect(user='root', database='aqeela_tugas_akhir')
 cursor = cnx.cursor()
 
@@ -40,7 +45,7 @@ def init(min_support, min_probability):
 	min_probability = 0.5;
 
 def readFile():
-	lines = [line.rstrip('\n') for line in open('C:\\Users\\Kevin\\PycharmProjects\\TugasAkhir\\dataset\\kasus-fptree-training.csv')]
+	lines = [line.rstrip('\n') for line in open(url_training)]
 
 	gejala = []
 	for val in lines:
@@ -325,8 +330,6 @@ if __name__ == '__main__':
 
 
 	database =[]
-	min_support = 23;
-	min_probability = 0.5;
 
 
 	#init(min_support, min_probability)
